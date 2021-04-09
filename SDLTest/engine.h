@@ -2,6 +2,6 @@
 
 namespace engine
 {
-	int init();
+	void init();
 	void quit();
 }

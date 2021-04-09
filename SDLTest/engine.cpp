@@ -1,6 +1,4 @@
 #include "SDL.h"
-#include <stdio.h>
-#include "ErrorCodes.h"
 #include "Window.h"
 
 namespace engine
@@ -8,19 +6,19 @@ namespace engine
 	Window window;
 
 	// initialize the engine
-	int init()
+	void init()
 	{
 		// init SDL
 		if (SDL_Init(SDL_INIT_VIDEO) < 0) {
 			// throw error and exit application
-			printf("SDL could not be initialized! SDL_Error: %s\n", SDL_GetError());
-			return ERRORCODE::SDL_API;
+			throw "SDL could not be initialized! SDL_Error:\n%s\n", SDL_GetError();
+			return;
 		}
 
-		window = new Window();
-
-
-		return 0;
+		window = Window();
+		
+		// temp code
+		window.create("Test title", GBM::Vector2i(640, 480));
 	}
 
 	// quit the engine

@@ -147,13 +147,22 @@
   <ItemGroup>
     <ClCompile Include="engine.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Vector2d.cpp" />
+    <ClCompile Include="Math\Vectors\Vector2d.cpp" />
+    <ClCompile Include="Math\Vectors\Vector2f.cpp" />
+    <ClCompile Include="Math\Vectors\Vector2i.cpp" />
+    <ClCompile Include="Math\Vectors\Vector3d.cpp" />
+    <ClCompile Include="Math\Vectors\Vector3f.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="engine.h" />
-    <ClInclude Include="ErrorCodes.h" />
-    <ClInclude Include="Vector2d.h" />
+    <ClInclude Include="Math\math.h" />
+    <ClInclude Include="Math\Vectors\Vector2d.h" />
+    <ClInclude Include="Math\Vectors\Vector2f.h" />
+    <ClInclude Include="Math\Vectors\Vector2i.h" />
+    <ClInclude Include="Math\Vectors\Vector3d.h" />
+    <ClInclude Include="Math\Vectors\Vector3f.h" />
+    <ClInclude Include="Math\Vectors\vectors.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
