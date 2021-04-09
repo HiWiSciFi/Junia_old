@@ -1,4 +1,5 @@
 #include "SDL.h"
+#include "Math\math.h"
 #include "Window.h"
 
 namespace engine

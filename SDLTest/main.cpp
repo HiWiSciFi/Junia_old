@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
 {
 	try {
 		engine::init();
-		SDL_Delay(2000);
+		SDL_Delay(5000);
 		engine::quit();
 	}
 	catch (std::exception e) {
