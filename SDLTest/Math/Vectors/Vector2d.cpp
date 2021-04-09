@@ -3,8 +3,8 @@
 
 GBM::Vector2d::Vector2d()
 {
-	x = 0.0;
-	y = 0.0;
+	this->x = 0.0;
+	this->y = 0.0;
 }
 
 GBM::Vector2d::Vector2d(double x, double y)
@@ -20,16 +20,16 @@ GBM::Vector2d::~Vector2d()
 
 double GBM::Vector2d::magnitude()
 {
-	return std::sqrt(x * x + y * y);
+	return std::sqrt(this->x * this->x + this->y * this->y);
 }
 
 void GBM::Vector2d::normalize()
 {
-	double mag = magnitude();
+	double mag = this->magnitude();
 	if (mag > 0.0) {
 		double oneovermag = 1.0 / mag;
-		x = x * oneovermag;
-		y = y * oneovermag;
+		this->x = this->x * oneovermag;
+		this->y = this->y * oneovermag;
 	}
 }
 
@@ -37,9 +37,9 @@ double GBM::Vector2d::operator[](const int index)
 {
 	switch (index) {
 	case 0:
-		return x;
+		return this->x;
 	case 1:
-		return y;
+		return this->y;
 	default:
 		throw "GBM::Vector2d index out of bounds!";
 		return 0.0;
@@ -48,67 +48,67 @@ double GBM::Vector2d::operator[](const int index)
 
 GBM::Vector2d::Vector2d(const GBM::Vector2d& v)
 {
-	x = v.x;
-	y = v.y;
+	this->x = v.x;
+	this->y = v.y;
 }
 
 GBM::Vector2d& GBM::Vector2d::operator=(const GBM::Vector2d& v)
 {
-	x = v.x;
-	y = v.y;
+	this->x = v.x;
+	this->y = v.y;
 	return *this;
 }
 
 void GBM::Vector2d::operator+=(const GBM::Vector2d& v)
 {
-	x += v.x;
-	y += v.y;
+	this->x += v.x;
+	this->y += v.y;
 }
 
 GBM::Vector2d GBM::Vector2d::operator+(const GBM::Vector2d& v) const
 {
-	return GBM::Vector2d(x + v.x, y + v.y);
+	return GBM::Vector2d(this->x + v.x, this->y + v.y);
 }
 
 void GBM::Vector2d::operator-=(const GBM::Vector2d& v)
 {
-	x -= v.x;
-	y -= v.y;
+	this->x -= v.x;
+	this->y -= v.y;
 }
 
 GBM::Vector2d GBM::Vector2d::operator-(const GBM::Vector2d& v) const
 {
-	return GBM::Vector2d(x - v.x, y - v.y);
+	return GBM::Vector2d(this->x - v.x, this->y - v.y);
 }
 
 void GBM::Vector2d::operator*=(const double& d)
 {
-	x *= d;
-	y *= d;
+	this->x *= d;
+	this->y *= d;
 }
 
 GBM::Vector2d GBM::Vector2d::operator*(const double& d) const
 {
-	return GBM::Vector2d(x * d, y * d);
+	return GBM::Vector2d(this->x * d, this->y * d);
 }
 
 void GBM::Vector2d::operator/=(const double& d)
 {
-	x /= d;
-	y /= d;
+	this->x /= d;
+	this->y /= d;
 }
 
 GBM::Vector2d GBM::Vector2d::operator/(const double& d) const
 {
-	return GBM::Vector2d(x / d, y / d);
+	return GBM::Vector2d(this->x / d, this->y / d);
 }
 
 double GBM::Vector2d::operator*(const GBM::Vector2d& v) const
 {
-	return x * v.x + y * v.y;
+	return this->x * v.x + this->y * v.y;
 }
 
 double GBM::Vector2d::dot(const GBM::Vector2d& v) const
 {
-	return x * v.x + y * v.y;
+	return this->x * v.x + this->y * v.y;
 }

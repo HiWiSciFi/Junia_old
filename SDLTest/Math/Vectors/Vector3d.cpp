@@ -3,9 +3,9 @@
 
 GBM::Vector3d::Vector3d()
 {
-	x = 0.0;
-	y = 0.0;
-	z = 0.0;
+	this->x = 0.0;
+	this->y = 0.0;
+	this->z = 0.0;
 }
 
 GBM::Vector3d::Vector3d(double x, double y, double z)
@@ -22,17 +22,17 @@ GBM::Vector3d::~Vector3d()
 
 double GBM::Vector3d::magnitude()
 {
-	return std::sqrt(x * x + y * y + z * z);
+	return std::sqrt(this->x * this->x + this->y * this->y + this->z * this->z);
 }
 
 void GBM::Vector3d::normalize()
 {
-	double mag = magnitude();
+	double mag = this->magnitude();
 	if (mag > 0.0) {
 		double oneovermag = 1.0 / mag;
-		x = x * oneovermag;
-		y = y * oneovermag;
-		z = z * oneovermag;
+		this->x = this->x * oneovermag;
+		this->y = this->y * oneovermag;
+		this->z = this->z * oneovermag;
 	}
 }
 
@@ -40,11 +40,11 @@ double GBM::Vector3d::operator[](const int index)
 {
 	switch (index) {
 	case 0:
-		return x;
+		return this->x;
 	case 1:
-		return y;
+		return this->y;
 	case 2:
-		return z;
+		return this->z;
 	default:
 		throw "GBM::Vector3d index out of bounds!";
 		return 0.0;
@@ -53,36 +53,36 @@ double GBM::Vector3d::operator[](const int index)
 
 GBM::Vector3d::Vector3d(const GBM::Vector3d& v)
 {
-	x = v.x;
-	y = v.y;
-	z = v.z;
+	this->x = v.x;
+	this->y = v.y;
+	this->z = v.z;
 }
 
 GBM::Vector3d& GBM::Vector3d::operator=(const GBM::Vector3d& v)
 {
-	x = v.x;
-	y = v.y;
-	z = v.z;
+	this->x = v.x;
+	this->y = v.y;
+	this->z = v.z;
 	return *this;
 }
 
 void GBM::Vector3d::operator+=(const GBM::Vector3d& v)
 {
-	x += v.x;
-	y += v.y;
-	z += v.z;
+	this->x += v.x;
+	this->y += v.y;
+	this->z += v.z;
 }
 
 GBM::Vector3d GBM::Vector3d::operator+(const GBM::Vector3d& v) const
 {
-	return GBM::Vector3d(x + v.x, y + v.y, z + v.z);
+	return GBM::Vector3d(this->x + v.x, this->y + v.y, this->z + v.z);
 }
 
 void GBM::Vector3d::operator-=(const GBM::Vector3d& v)
 {
-	x -= v.x;
-	y -= v.y;
-	z -= v.z;
+	this->x -= v.x;
+	this->y -= v.y;
+	this->z -= v.z;
 }
 
 GBM::Vector3d GBM::Vector3d::operator-(const GBM::Vector3d& v) const
@@ -92,9 +92,9 @@ GBM::Vector3d GBM::Vector3d::operator-(const GBM::Vector3d& v) const
 
 void GBM::Vector3d::operator*=(const double& d)
 {
-	x *= d;
-	y *= d;
-	z *= d;
+	this->x *= d;
+	this->y *= d;
+	this->z *= d;
 }
 
 GBM::Vector3d GBM::Vector3d::operator*(const double& d) const
@@ -104,37 +104,37 @@ GBM::Vector3d GBM::Vector3d::operator*(const double& d) const
 
 void GBM::Vector3d::operator/=(const double& d)
 {
-	x /= d;
-	y /= d;
-	z /= d;
+	this->x /= d;
+	this->y /= d;
+	this->z /= d;
 }
 
 GBM::Vector3d GBM::Vector3d::operator/(const double& d) const
 {
-	return GBM::Vector3d(x / d, y / d, z / d);
+	return GBM::Vector3d(this->x / d, this->y / d, this->z / d);
 }
 
 void GBM::Vector3d::operator%=(const GBM::Vector3d& v)
 {
-	*this = cross(v);
+	*this = this->cross(v);
 }
 
 GBM::Vector3d GBM::Vector3d::operator%(const GBM::Vector3d& v) const
 {
-	return GBM::Vector3d(y * v.z - z * v.y, z * v.x - x * v.z, x * v.y - y * v.x);
+	return GBM::Vector3d(this->y * v.z - this->z * v.y, this->z * v.x - this->x * v.z, this->x * v.y - this->y * v.x);
 }
 
 GBM::Vector3d GBM::Vector3d::cross(const GBM::Vector3d& v) const
 {
-	return GBM::Vector3d(y * v.z - z * v.y, z * v.x - x * v.z, x * v.y - y * v.x);
+	return GBM::Vector3d(this->y * v.z - this->z * v.y, this->z * v.x - this->x * v.z, this->x * v.y - this->y * v.x);
 }
 
 double GBM::Vector3d::operator*(const GBM::Vector3d& v) const
 {
-	return x * v.x + y * v.y + z * v.z;
+	return this->x * v.x + this->y * v.y + this->z * v.z;
 }
 
 double GBM::Vector3d::dot(const GBM::Vector3d& v) const
 {
-	return x * v.x + y * v.y + z * v.z;
+	return this->x * v.x + this->y * v.y + this->z * v.z;
 }

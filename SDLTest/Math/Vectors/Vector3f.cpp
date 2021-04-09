@@ -3,9 +3,9 @@
 
 GBM::Vector3f::Vector3f()
 {
-	x = 0.0;
-	y = 0.0;
-	z = 0.0;
+	this->x = 0.0;
+	this->y = 0.0;
+	this->z = 0.0;
 }
 
 GBM::Vector3f::Vector3f(float x, float y, float z)
@@ -22,17 +22,17 @@ GBM::Vector3f::~Vector3f()
 
 float GBM::Vector3f::magnitude()
 {
-	return std::sqrt(x * x + y * y + z * z);
+	return std::sqrt(this->x * this->x + this->y * this->y + this->z * this->z);
 }
 
 void GBM::Vector3f::normalize()
 {
-	float mag = magnitude();
+	float mag = this->magnitude();
 	if (mag > 0.0) {
 		float oneovermag = float(1.0 / mag);
-		x = x * oneovermag;
-		y = y * oneovermag;
-		z = z * oneovermag;
+		this->x = this->x * oneovermag;
+		this->y = this->y * oneovermag;
+		this->z = this->z * oneovermag;
 	}
 }
 
@@ -40,11 +40,11 @@ float GBM::Vector3f::operator[](const int index)
 {
 	switch (index) {
 	case 0:
-		return x;
+		return this->x;
 	case 1:
-		return y;
+		return this->y;
 	case 2:
-		return z;
+		return this->z;
 	default:
 		throw "GBM::Vector3f index out of bounds!";
 		return 0.0f;
@@ -53,88 +53,88 @@ float GBM::Vector3f::operator[](const int index)
 
 GBM::Vector3f::Vector3f(const GBM::Vector3f& v)
 {
-	x = v.x;
-	y = v.y;
-	z = v.z;
+	this->x = v.x;
+	this->y = v.y;
+	this->z = v.z;
 }
 
 GBM::Vector3f& GBM::Vector3f::operator=(const GBM::Vector3f& v)
 {
-	x = v.x;
-	y = v.y;
-	z = v.z;
+	this->x = v.x;
+	this->y = v.y;
+	this->z = v.z;
 	return *this;
 }
 
 void GBM::Vector3f::operator+=(const GBM::Vector3f& v)
 {
-	x += v.x;
-	y += v.y;
-	z += v.z;
+	this->x += v.x;
+	this->y += v.y;
+	this->z += v.z;
 }
 
 GBM::Vector3f GBM::Vector3f::operator+(const GBM::Vector3f& v) const
 {
-	return GBM::Vector3f(x + v.x, y + v.y, z + v.z);
+	return GBM::Vector3f(this->x + v.x, this->y + v.y, this->z + v.z);
 }
 
 void GBM::Vector3f::operator-=(const GBM::Vector3f& v)
 {
-	x -= v.x;
-	y -= v.y;
-	z -= v.z;
+	this->x -= v.x;
+	this->y -= v.y;
+	this->z -= v.z;
 }
 
 GBM::Vector3f GBM::Vector3f::operator-(const GBM::Vector3f& v) const
 {
-	return GBM::Vector3f(x - v.x, y - v.y, z - v.z);
+	return GBM::Vector3f(this->x - v.x, this->y - v.y, this->z - v.z);
 }
 
 void GBM::Vector3f::operator*=(const float& d)
 {
-	x *= d;
-	y *= d;
-	z *= d;
+	this->x *= d;
+	this->y *= d;
+	this->z *= d;
 }
 
 GBM::Vector3f GBM::Vector3f::operator*(const float& d) const
 {
-	return GBM::Vector3f(x * d, y * d, z * d);
+	return GBM::Vector3f(this->x * d, this->y * d, this->z * d);
 }
 
 void GBM::Vector3f::operator/=(const float& d)
 {
-	x /= d;
-	y /= d;
-	z /= d;
+	this->x /= d;
+	this->y /= d;
+	this->z /= d;
 }
 
 GBM::Vector3f GBM::Vector3f::operator/(const float& d) const
 {
-	return GBM::Vector3f(x / d, y / d, z / d);
+	return GBM::Vector3f(this->x / d, this->y / d, this->z / d);
 }
 
 void GBM::Vector3f::operator%=(const GBM::Vector3f& v)
 {
-	*this = cross(v);
+	*this = this->cross(v);
 }
 
 GBM::Vector3f GBM::Vector3f::operator%(const GBM::Vector3f& v) const
 {
-	return GBM::Vector3f(y * v.z - z * v.y, z * v.x - x * v.z, x * v.y - y * v.x);
+	return GBM::Vector3f(this->y * v.z - this->z * v.y, this->z * v.x - this->x * v.z, this->x * v.y - this->y * v.x);
 }
 
 GBM::Vector3f GBM::Vector3f::cross(const GBM::Vector3f& v) const
 {
-	return GBM::Vector3f(y * v.z - z * v.y, z * v.x - x * v.z, x * v.y - y * v.x);
+	return GBM::Vector3f(this->y * v.z - this->z * v.y, this->z * v.x - this->x * v.z, this->x * v.y - this->y * v.x);
 }
 
 float GBM::Vector3f::operator*(const GBM::Vector3f& v) const
 {
-	return x * v.x + y * v.y + z * v.z;
+	return this->x * v.x + this->y * v.y + this->z * v.z;
 }
 
 float GBM::Vector3f::dot(const GBM::Vector3f& v) const
 {
-	return x * v.x + y * v.y + z * v.z;
+	return this->x * v.x + this->y * v.y + this->z * v.z;
 }

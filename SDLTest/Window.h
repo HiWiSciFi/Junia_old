@@ -10,15 +10,26 @@ private:
 
 	bool bordered;
 	bool resizable;
+
+	void checkCreated() const;
 public:
+	// constructor
 	Window();
+	// destructor
 	~Window();
 
+	// copy constructors
+	Window(const Window& v);
+	Window& operator=(const Window& v);
+
+	// create functions
 	void create(const char* title, GBM::Vector2i size);
 	void create(const char* title, GBM::Vector2i position, GBM::Vector2i size);
 
+	// destroy window
 	void destroy();
 
+	// getter
 	bool hasBorder() const;
 	void getBordersSize(int* top, int* left, int* bottom, int* right) const;
 	float getGamma() const;
@@ -33,6 +44,7 @@ public:
 	GBM::Vector2i getSize() const;
 	const char* getTitle() const;
 
+	// setter
 	void setBorder(bool bordered);
 	void setGamma(float gamma);
 	void setTrueFullscreen();
