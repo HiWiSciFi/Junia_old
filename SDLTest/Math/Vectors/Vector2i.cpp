@@ -23,16 +23,6 @@ float GBM::Vector2i::magnitude()
 	return float(std::sqrt(x * x + y * y));
 }
 
-void GBM::Vector2i::normalize()
-{
-	float mag = magnitude();
-	if (mag > 0.0) {
-		float oneovermag = float(1.0 / mag);
-		x = int(x * oneovermag);
-		y = int(y * oneovermag);
-	}
-}
-
 int GBM::Vector2i::operator[](const int index)
 {
 	switch (index) {

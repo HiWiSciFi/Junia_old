@@ -18,8 +18,6 @@ namespace GBM {
 
 		float magnitude();
 
-		void normalize();
-
 
 		int operator[](const int index);
 

@@ -152,6 +152,7 @@
     <ClCompile Include="Math\Vectors\Vector2i.cpp" />
     <ClCompile Include="Math\Vectors\Vector3d.cpp" />
     <ClCompile Include="Math\Vectors\Vector3f.cpp" />
+    <ClCompile Include="Math\Vectors\Vector3i.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +164,7 @@
     <ClInclude Include="Math\Vectors\Vector3d.h" />
     <ClInclude Include="Math\Vectors\Vector3f.h" />
     <ClInclude Include="Math\Vectors\vectors.h" />
+    <ClInclude Include="Math\Vectors\Vector3i.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
