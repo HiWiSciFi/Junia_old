@@ -153,26 +153,27 @@
   <ItemGroup>
     <ClCompile Include="engine.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Math\Vectors\Vector2d.cpp" />
-    <ClCompile Include="Math\Vectors\Vector2f.cpp" />
-    <ClCompile Include="Math\Vectors\Vector2i.cpp" />
-    <ClCompile Include="Math\Vectors\Vector3d.cpp" />
-    <ClCompile Include="Math\Vectors\Vector3f.cpp" />
-    <ClCompile Include="Math\Vectors\Vector3i.cpp" />
-    <ClCompile Include="Math\Matrix.cpp" />
+    <ClCompile Include="math\vectors\Vector2d.cpp" />
+    <ClCompile Include="math\vectors\Vector2f.cpp" />
+    <ClCompile Include="math\vectors\Vector2i.cpp" />
+    <ClCompile Include="math\vectors\Vector3d.cpp" />
+    <ClCompile Include="math\vectors\Vector3f.cpp" />
+    <ClCompile Include="math\vectors\Vector3i.cpp" />
+    <ClCompile Include="math\matrices\iMatrix.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="engine.h" />
-    <ClInclude Include="Math\math.h" />
-    <ClInclude Include="Math\Vectors\Vector2d.h" />
-    <ClInclude Include="Math\Vectors\Vector2f.h" />
-    <ClInclude Include="Math\Vectors\Vector2i.h" />
-    <ClInclude Include="Math\Vectors\Vector3d.h" />
-    <ClInclude Include="Math\Vectors\Vector3f.h" />
-    <ClInclude Include="Math\Vectors\vectors.h" />
-    <ClInclude Include="Math\Vectors\Vector3i.h" />
-    <ClInclude Include="Math\Matrix.h" />
+    <ClInclude Include="math\math.h" />
+    <ClInclude Include="math\matrices\matrices.h" />
+    <ClInclude Include="math\vectors\Vector2d.h" />
+    <ClInclude Include="math\vectors\Vector2f.h" />
+    <ClInclude Include="math\vectors\Vector2i.h" />
+    <ClInclude Include="math\vectors\Vector3d.h" />
+    <ClInclude Include="math\vectors\Vector3f.h" />
+    <ClInclude Include="math\vectors\vectors.h" />
+    <ClInclude Include="math\vectors\Vector3i.h" />
+    <ClInclude Include="math\matrices\iMatrix.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

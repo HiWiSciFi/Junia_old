@@ -1,3 +1,3 @@
 #pragma once
-#include "Vectors\vectors.h"
-#include "Matrix.h"
+#include "vectors\vectors.h"
+#include "matrices\iMatrix.h"

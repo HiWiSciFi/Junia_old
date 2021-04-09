@@ -24,25 +24,25 @@
     <ClCompile Include="Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Math\Vectors\Vector2d.cpp">
+    <ClCompile Include="math\vectors\Vector2d.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Math\Vectors\Vector2f.cpp">
+    <ClCompile Include="math\vectors\Vector2f.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Math\Vectors\Vector2i.cpp">
+    <ClCompile Include="math\vectors\Vector2i.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Math\Vectors\Vector3d.cpp">
+    <ClCompile Include="math\vectors\Vector3d.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Math\Vectors\Vector3f.cpp">
+    <ClCompile Include="math\vectors\Vector3f.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Math\Vectors\Vector3i.cpp">
+    <ClCompile Include="math\vectors\Vector3i.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Math\Matrix.cpp">
+    <ClCompile Include="math\matrices\iMatrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,31 +53,34 @@
     <ClInclude Include="Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\Vectors\Vector2d.h">
+    <ClInclude Include="math\vectors\Vector2d.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\Vectors\Vector2f.h">
+    <ClInclude Include="math\vectors\Vector2f.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\Vectors\Vector2i.h">
+    <ClInclude Include="math\vectors\Vector2i.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\Vectors\Vector3d.h">
+    <ClInclude Include="math\vectors\Vector3d.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\Vectors\Vector3f.h">
+    <ClInclude Include="math\vectors\Vector3f.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\math.h">
+    <ClInclude Include="math\math.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\Vectors\vectors.h">
+    <ClInclude Include="math\vectors\vectors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\Vectors\Vector3i.h">
+    <ClInclude Include="math\vectors\Vector3i.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\Matrix.h">
+    <ClInclude Include="math\matrices\iMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="math\matrices\matrices.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

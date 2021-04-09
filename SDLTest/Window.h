@@ -1,6 +1,6 @@
 #pragma once
 #include "SDL.h"
-#include "Math\Vectors\Vector2i.h"
+#include "math\vectors\Vector2i.h"
 
 class Window
 {
