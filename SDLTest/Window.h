@@ -1,10 +1,15 @@
-#pragma once
+#ifndef GB_WINDOW_H_
+#define GB_WINDOW_H_
+
 #include "SDL.h"
 #include "math\vectors\Vector2i.h"
 
 class Window
 {
 private:
+	//temp
+	SDL_Surface* helloWorldSurface;
+
 	SDL_Window* window;
 	SDL_Surface* surface;
 
@@ -61,3 +66,5 @@ public:
 	void setSize(const GBM::Vector2i size);
 	void setTitle(const char* title);
 };
+
+#endif

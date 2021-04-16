@@ -177,3 +177,4 @@ GBM::iMatrix& GBM::iMatrix::setAsIdentityMatrix()
 	}
 	return *this;
 }
+

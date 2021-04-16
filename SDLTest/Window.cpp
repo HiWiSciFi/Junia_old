@@ -1,6 +1,7 @@
 #include "Window.h"
 #include <stdio.h>
 #include <string>
+#include <iostream>
 
 Window::Window()
 {
@@ -9,11 +10,18 @@ Window::Window()
 
 	bordered = true;
 	resizable = false;
+
+	//temp
+	helloWorldSurface = NULL;
 }
 
 Window::~Window()
 {
 	if (window != NULL) this->destroy();
+
+	//temp
+	SDL_FreeSurface(helloWorldSurface);
+	helloWorldSurface = NULL;
 }
 
 Window::Window(const Window& w)
@@ -23,6 +31,9 @@ Window::Window(const Window& w)
 
 	this->bordered = w.bordered;
 	this->resizable = w.resizable;
+
+	//temp
+	helloWorldSurface = NULL;
 }
 
 Window& Window::operator=(const Window& w)
@@ -32,6 +43,9 @@ Window& Window::operator=(const Window& w)
 
 	this->bordered = w.bordered;
 	this->resizable = w.resizable;
+
+	//temp
+	this->helloWorldSurface = w.helloWorldSurface;
 
 	return *this;
 }
@@ -78,6 +92,15 @@ void Window::create(const char* title, GBM::Vector2i position, GBM::Vector2i siz
 	SDL_FillRect(this->surface, NULL, SDL_MapRGB(this->surface->format, 255, 0, 0));
 
 	// update surface
+	SDL_UpdateWindowSurface(this->window);
+
+	//temp
+	helloWorldSurface = SDL_LoadBMP("HelloWorld.bmp");
+	if (helloWorldSurface == NULL)
+	{
+		printf("Error loading image: SDL_Error: %s\n", SDL_GetError());
+	}
+	SDL_BlitSurface(helloWorldSurface, NULL, this->surface, NULL);
 	SDL_UpdateWindowSurface(this->window);
 }
 
