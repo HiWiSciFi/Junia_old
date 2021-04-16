@@ -50,9 +50,9 @@ Window& Window::operator=(const Window& w)
 	return *this;
 }
 
-void Window::create(const char* title, GBM::Vector2i size)
+void Window::create(const char* title, GBM::Vector2<int> size)
 {
-	this->create(title, GBM::Vector2i(SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED), size);
+	this->create(title, GBM::Vector2<int>(SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED), size);
 }
 
 void Window::checkCreated() const
@@ -62,7 +62,7 @@ void Window::checkCreated() const
 	}
 }
 
-void Window::create(const char* title, GBM::Vector2i position, GBM::Vector2i size)
+void Window::create(const char* title, GBM::Vector2<int> position, GBM::Vector2<int> size)
 {
 	if (window != NULL) throw "Window has already been created!";
 
@@ -147,18 +147,18 @@ bool Window::isInputSource() const
 	return SDL_GetWindowGrab(this->window);
 }
 
-GBM::Vector2i Window::getMaxSize() const
+GBM::Vector2<int> Window::getMaxSize() const
 {
 	this->checkCreated();
-	GBM::Vector2i retv;
+	GBM::Vector2<int> retv;
 	SDL_GetWindowMaximumSize(this->window, &retv.x, &retv.y);
 	return retv;
 }
 
-GBM::Vector2i Window::getMinSize() const
+GBM::Vector2<int> Window::getMinSize() const
 {
 	this->checkCreated();
-	GBM::Vector2i retv;
+	GBM::Vector2<int> retv;
 	SDL_GetWindowMinimumSize(this->window, &retv.x, &retv.y);
 	return retv;
 }
@@ -173,10 +173,10 @@ float Window::getOpacity() const
 	return o;
 }
 
-GBM::Vector2i Window::getPosition() const
+GBM::Vector2<int> Window::getPosition() const
 {
 	this->checkCreated();
-	GBM::Vector2i retv;
+	GBM::Vector2<int> retv;
 	SDL_GetWindowPosition(this->window, &retv.x, &retv.y);
 	return retv;
 }
@@ -187,10 +187,10 @@ bool Window::isResizable() const
 	return this->resizable;
 }
 
-GBM::Vector2i Window::getSize() const
+GBM::Vector2<int> Window::getSize() const
 {
 	this->checkCreated();
-	GBM::Vector2i retv;
+	GBM::Vector2<int> retv;
 	SDL_GetWindowSize(this->window, &retv.x, &retv.y);
 	return retv;
 }
@@ -246,13 +246,13 @@ void Window::setAsInputSource(const bool use)
 
 //TODO: SDL_SetWindowIcon
 
-void Window::setMaxSize(const GBM::Vector2i size)
+void Window::setMaxSize(const GBM::Vector2<int> size)
 {
 	this->checkCreated();
 	SDL_SetWindowMaximumSize(this->window, size.x, size.y);
 }
 
-void Window::setMinSize(const GBM::Vector2i size)
+void Window::setMinSize(const GBM::Vector2<int> size)
 {
 	this->checkCreated();
 	SDL_SetWindowMinimumSize(this->window, size.x, size.y);
@@ -267,7 +267,7 @@ void Window::setOpacity(const float opacity)
 	SDL_SetWindowOpacity(this->window, opacity);
 }
 
-void Window::setPosition(const GBM::Vector2i position)
+void Window::setPosition(const GBM::Vector2<int> position)
 {
 	this->checkCreated();
 	SDL_SetWindowPosition(this->window, position.x, position.y);
@@ -280,7 +280,7 @@ void Window::setResizable(const bool resizable)
 	this->resizable = resizable;
 }
 
-void Window::setSize(const GBM::Vector2i size)
+void Window::setSize(const GBM::Vector2<int> size)
 {
 	this->checkCreated();
 	if (size.x <= 0 || size.y <= 0) {

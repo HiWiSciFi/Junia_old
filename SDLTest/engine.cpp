@@ -18,7 +18,7 @@ namespace engine
 		window = Window();
 		
 		// temp code
-		window.create("Test title", GBM::Vector2i(640, 480));
+		window.create("Test title", GBM::Vector2<int>(640, 480));
 
 		bool quit = false;
 		while (!quit) {
