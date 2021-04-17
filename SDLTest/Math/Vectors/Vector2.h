@@ -1,5 +1,6 @@
 #ifndef GBM_VECTOR2_H_
 #define GBM_VECTOR2_H_
+
 #include <cmath>
 
 namespace GBM {

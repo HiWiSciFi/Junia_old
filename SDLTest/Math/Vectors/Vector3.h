@@ -1,6 +1,8 @@
 #ifndef GBM_VECTOR3_H_
 #define GBM_VECTOR3_H_
 
+#include <cmath>
+
 namespace GBM {
 	template<class T> class Vector3 {
 	private:
@@ -8,7 +10,7 @@ namespace GBM {
 	public:
 
 		// attributes
-
+		
 		T x;
 		T y;
 		T z;
@@ -48,7 +50,7 @@ namespace GBM {
 			}
 		}
 
-		double operator[](const int index) {
+		T operator[](const int index) {
 			switch (index) {
 			case 0:
 				return this->x;
@@ -58,7 +60,7 @@ namespace GBM {
 				return this->z;
 			default:
 				throw "GBM::Vector3 index out of bounds!";
-				return 0.0;
+				return 0;
 			}
 		}
 
@@ -85,18 +87,18 @@ namespace GBM {
 			this->z += v.z;
 		}
 
-		Vector3 operator+(const Vector3& v) const {
-			return Vector3d(this->x + v.x, this->y + v.y, this->z + v.z);
+		Vector3<T> operator+(const Vector3<T>& v) const {
+			return Vector3<T>(this->x + v.x, this->y + v.y, this->z + v.z);
 		}
 
-		void operator-=(const Vector3& v) {
+		void operator-=(const Vector3<T>& v) {
 			this->x -= v.x;
 			this->y -= v.y;
 			this->z -= v.z;
 		}
 
 		Vector3<T> operator-(const Vector3<T>& v) const {
-			return Vector3d<T>(x - v.x, y - v.y, z - v.z);
+			return Vector3<T>(x - v.x, y - v.y, z - v.z);
 		}
 
 		void operator*=(const double& d) {
@@ -106,7 +108,7 @@ namespace GBM {
 		}
 
 		Vector3<T> operator*(const double& d) const {
-			return Vector3d<T>(x * d, y * d, z * d);
+			return Vector3<T>(x * d, y * d, z * d);
 		}
 
 		void operator/=(const double& d) {
@@ -116,7 +118,7 @@ namespace GBM {
 		}
 
 		Vector3<T> operator/(const double& d) const {
-			return Vector3d<T>(this->x / d, this->y / d, this->z / d);
+			return Vector3<T>(this->x / d, this->y / d, this->z / d);
 		}
 
 		void operator%=(const Vector3<T>& v) {
@@ -124,11 +126,11 @@ namespace GBM {
 		}
 
 		Vector3<T> operator %(const Vector3<T>& v) const {
-			return Vector3d<T>(this->y * v.z - this->z * v.y, this->z * v.x - this->x * v.z, this->x * v.y - this->y * v.x);
+			return Vector3<T>(this->y * v.z - this->z * v.y, this->z * v.x - this->x * v.z, this->x * v.y - this->y * v.x);
 		}
 
 		Vector3<T> cross(const Vector3<T>& v) const {
-			return Vector3d<T>(this->y * v.z - this->z * v.y, this->z * v.x - this->x * v.z, this->x * v.y - this->y * v.x);
+			return Vector3<T>(this->y * v.z - this->z * v.y, this->z * v.x - this->x * v.z, this->x * v.y - this->y * v.x);
 		}
 
 		double operator*(const Vector3<T>& v) const {
