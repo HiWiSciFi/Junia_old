@@ -1,4 +1,5 @@
 #include "SDL.h"
+#include "SDL_image.h"
 #include "Window.h"
 
 namespace engine
@@ -16,6 +17,13 @@ namespace engine
 		}
 
 		window = Window();
+
+		// init SDL_image
+		int imgFlags = IMG_INIT_JPG | IMG_INIT_PNG | IMG_INIT_TIF | IMG_INIT_WEBP;
+		if (!(IMG_Init(imgFlags) & imgFlags))
+		{
+			throw "SDL_image could not initialize! SDL_image Error: %s\n", IMG_GetError();
+		}
 		
 		// temp code
 		window.create("Test title", GBM::Vector2<int>(640, 480));
@@ -36,6 +44,9 @@ namespace engine
 	{
 		// destroy window
 		window.destroy();
+
+		// quit SDL_image
+		IMG_Quit();
 
 		// quit SDL
 		SDL_Quit();

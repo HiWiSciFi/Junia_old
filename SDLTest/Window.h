@@ -3,12 +3,13 @@
 
 #include "SDL.h"
 #include "math\vectors\Vector2.h"
+#include "Texture.h"
 
 class Window
 {
 private:
 	//temp
-	SDL_Surface* helloWorldSurface;
+	Texture helloWorldTex;
 
 	SDL_Window* window;
 	SDL_Surface* surface;

@@ -1,7 +1,2 @@
-﻿  engine.cpp
-  main.cpp
-  iMatrix.cpp
-  Window.cpp
-  Generating Code...
-  LINK : D:\Projekte\VisualStudio\source\repos\SDLTestProj\Debug\SDLTest.exe not found or not built by the last incremental link; performing full link
+﻿  Window.cpp
   SDLTest.vcxproj -> D:\Projekte\VisualStudio\source\repos\SDLTestProj\Debug\SDLTest.exe

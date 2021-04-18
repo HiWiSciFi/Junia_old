@@ -55,7 +55,7 @@ namespace GBM {
 				return this->y;
 			default:
 				throw "GBM::Vector2 index out of bounds!";
-				return NULL;
+				return 0;
 			}
 		}
 

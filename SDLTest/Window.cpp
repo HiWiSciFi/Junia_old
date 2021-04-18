@@ -12,16 +12,12 @@ Window::Window()
 	resizable = false;
 
 	//temp
-	helloWorldSurface = NULL;
+	helloWorldTex = Texture();
 }
 
 Window::~Window()
 {
 	if (window != NULL) this->destroy();
-
-	//temp
-	SDL_FreeSurface(helloWorldSurface);
-	helloWorldSurface = NULL;
 }
 
 Window::Window(const Window& w)
@@ -33,7 +29,7 @@ Window::Window(const Window& w)
 	this->resizable = w.resizable;
 
 	//temp
-	helloWorldSurface = NULL;
+	helloWorldTex = Texture();
 }
 
 Window& Window::operator=(const Window& w)
@@ -45,7 +41,7 @@ Window& Window::operator=(const Window& w)
 	this->resizable = w.resizable;
 
 	//temp
-	this->helloWorldSurface = w.helloWorldSurface;
+	this->helloWorldTex = w.helloWorldTex;
 
 	return *this;
 }
@@ -95,12 +91,13 @@ void Window::create(const char* title, GBM::Vector2<int> position, GBM::Vector2<
 	SDL_UpdateWindowSurface(this->window);
 
 	//temp
-	helloWorldSurface = SDL_LoadBMP("HelloWorld.bmp");
-	if (helloWorldSurface == NULL)
+
+	helloWorldTex = Texture("D:/Projekte/VisualStudio/source/repos/SDLTestProj/SDLTest/HelloWorld.png");
+	/*if (helloWorldSurface == NULL)
 	{
 		printf("Error loading image: SDL_Error: %s\n", SDL_GetError());
-	}
-	SDL_BlitSurface(helloWorldSurface, NULL, this->surface, NULL);
+	}*/
+	SDL_BlitSurface(helloWorldTex.getSurface(), NULL, this->surface, NULL);
 	SDL_UpdateWindowSurface(this->window);
 }
 
