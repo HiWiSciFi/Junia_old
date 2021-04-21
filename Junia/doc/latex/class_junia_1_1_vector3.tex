@@ -1,0 +1,240 @@
+\hypertarget{class_junia_1_1_vector3}{}\doxysection{Junia\+::Vector3$<$ T $>$ Class Template Reference}
+\label{class_junia_1_1_vector3}\index{Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_ae8ff0ea6ff218044fd788951eba2c244}\label{class_junia_1_1_vector3_ae8ff0ea6ff218044fd788951eba2c244}} 
+\mbox{\hyperlink{class_junia_1_1_vector3_ae8ff0ea6ff218044fd788951eba2c244}{Vector3}} ()
+\begin{DoxyCompactList}\small\item\em the default constructor setting all values to 0 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_vector3_ae03752b26194acbece12093b341c307e}{Vector3}} (const T \mbox{\hyperlink{class_junia_1_1_vector3_afd3c9d6016407ee3dcf62e7a875096fb}{x}}, const T \mbox{\hyperlink{class_junia_1_1_vector3_ae5251bb54610ebd655909c2f0e335ad5}{y}}, const T \mbox{\hyperlink{class_junia_1_1_vector3_a93162e218dd8fb56e6ac789f00e6df41}{z}})
+\begin{DoxyCompactList}\small\item\em the constructor taking the values for the elements as inputs \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_junia_1_1_vector3_aace576e037377fb89e7df52b99635adb}{magnitude}} ()
+\begin{DoxyCompactList}\small\item\em get the magnitude of the vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_a1acc7241174553b32d5fd55cddad5d9c}\label{class_junia_1_1_vector3_a1acc7241174553b32d5fd55cddad5d9c}} 
+void \mbox{\hyperlink{class_junia_1_1_vector3_a1acc7241174553b32d5fd55cddad5d9c}{normalize}} ()
+\begin{DoxyCompactList}\small\item\em normalizes the vector \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_junia_1_1_vector3_a13be5c0fb2ef0548d3cdb905e85dbdfe}{operator\mbox{[}$\,$\mbox{]}}} (const int index)
+\begin{DoxyCompactList}\small\item\em get an element of the vector by index \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_vector3_a08d34672544c8cf9e42aea0036c688a2}{Vector3}} (const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&v)
+\begin{DoxyCompactList}\small\item\em create a vetcor by copying the elements from an existing vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_abcd98782ac1658fc2d74d4ecbbcf3b62}\label{class_junia_1_1_vector3_abcd98782ac1658fc2d74d4ecbbcf3b62}} 
+\mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&v)
+\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_aca3f32e5288a8198aadda934ede237d0}\label{class_junia_1_1_vector3_aca3f32e5288a8198aadda934ede237d0}} 
+void {\bfseries operator+=} (const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&v)
+\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_a864e12bafadac9e032fa3bf4aaa2142d}\label{class_junia_1_1_vector3_a864e12bafadac9e032fa3bf4aaa2142d}} 
+\mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ {\bfseries operator+} (const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&v) const
+\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_a13372aab2d681c4e60d70ac9b3ca0c11}\label{class_junia_1_1_vector3_a13372aab2d681c4e60d70ac9b3ca0c11}} 
+void {\bfseries operator-\/=} (const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&v)
+\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_a46d01c81486b62110af3134c9e453a2d}\label{class_junia_1_1_vector3_a46d01c81486b62110af3134c9e453a2d}} 
+\mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ {\bfseries operator-\/} (const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&v) const
+\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_a005289d421c5596dfb454caa844ad09b}\label{class_junia_1_1_vector3_a005289d421c5596dfb454caa844ad09b}} 
+void {\bfseries operator$\ast$=} (const double \&d)
+\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_a4bc7255104808cf0b36a28a6ccf59d00}\label{class_junia_1_1_vector3_a4bc7255104808cf0b36a28a6ccf59d00}} 
+\mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ {\bfseries operator$\ast$} (const double \&d) const
+\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_aa27ee1aa1b373efd71d76832fde790b9}\label{class_junia_1_1_vector3_aa27ee1aa1b373efd71d76832fde790b9}} 
+void {\bfseries operator/=} (const double \&d)
+\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_aba0542fef1436d18e5b58b2e93c35612}\label{class_junia_1_1_vector3_aba0542fef1436d18e5b58b2e93c35612}} 
+\mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ {\bfseries operator/} (const double \&d) const
+\item 
+void \mbox{\hyperlink{class_junia_1_1_vector3_a2df72b8f120c922b3ea777c071486e5f}{operator\%=}} (const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&v)
+\begin{DoxyCompactList}\small\item\em set this vector equal to the cross product with another vector \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \mbox{\hyperlink{class_junia_1_1_vector3_ab30f5d66a6bcc66c05601a12a9f0847a}{operator\%}} (const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&v) const
+\begin{DoxyCompactList}\small\item\em calculate the cross product of two vectors \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \mbox{\hyperlink{class_junia_1_1_vector3_acaf01681d307d6a2c6b0896f2a504a09}{cross}} (const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&v) const
+\begin{DoxyCompactList}\small\item\em calculate the cross product of two vectors \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_junia_1_1_vector3_a6ca966d2979bf8f834bb54a19c02abb1}{operator$\ast$}} (const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&v) const
+\begin{DoxyCompactList}\small\item\em calculate the dot product of two vectors \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_junia_1_1_vector3_a2a2af602b9509d1eae68f9ae157d2504}{dot}} (const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&v) const
+\begin{DoxyCompactList}\small\item\em calculate the dot product of two vectors \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_afd3c9d6016407ee3dcf62e7a875096fb}\label{class_junia_1_1_vector3_afd3c9d6016407ee3dcf62e7a875096fb}} 
+T \mbox{\hyperlink{class_junia_1_1_vector3_afd3c9d6016407ee3dcf62e7a875096fb}{x}}
+\begin{DoxyCompactList}\small\item\em the x value of the vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_ae5251bb54610ebd655909c2f0e335ad5}\label{class_junia_1_1_vector3_ae5251bb54610ebd655909c2f0e335ad5}} 
+T \mbox{\hyperlink{class_junia_1_1_vector3_ae5251bb54610ebd655909c2f0e335ad5}{y}}
+\begin{DoxyCompactList}\small\item\em the y value of the vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_junia_1_1_vector3_a93162e218dd8fb56e6ac789f00e6df41}\label{class_junia_1_1_vector3_a93162e218dd8fb56e6ac789f00e6df41}} 
+T \mbox{\hyperlink{class_junia_1_1_vector3_a93162e218dd8fb56e6ac789f00e6df41}{z}}
+\begin{DoxyCompactList}\small\item\em the z value of the vector \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_junia_1_1_vector3_ae03752b26194acbece12093b341c307e}\label{class_junia_1_1_vector3_ae03752b26194acbece12093b341c307e}} 
+\index{Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Vector3()}{Vector3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_junia_1_1_vector3}{Junia\+::\+Vector3}}$<$ T $>$\+::\mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}} (\begin{DoxyParamCaption}\item[{const T}]{x,  }\item[{const T}]{y,  }\item[{const T}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+the constructor taking the values for the elements as inputs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x value of the vector \\
+\hline
+{\em y} & the y value of the vector \\
+\hline
+{\em z} & the z value of the vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_vector3_a08d34672544c8cf9e42aea0036c688a2}\label{class_junia_1_1_vector3_a08d34672544c8cf9e42aea0036c688a2}} 
+\index{Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Vector3()}{Vector3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_junia_1_1_vector3}{Junia\+::\+Vector3}}$<$ T $>$\+::\mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+create a vetcor by copying the elements from an existing vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the vector to copy the values from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_junia_1_1_vector3_acaf01681d307d6a2c6b0896f2a504a09}\label{class_junia_1_1_vector3_acaf01681d307d6a2c6b0896f2a504a09}} 
+\index{Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}!cross@{cross}}
+\index{cross@{cross}!Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cross()}{cross()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$T$>$ \mbox{\hyperlink{class_junia_1_1_vector3}{Junia\+::\+Vector3}}$<$ T $>$\+::cross (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+calculate the cross product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the vector to multiply with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the vector resulting from the calculation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_vector3_a2a2af602b9509d1eae68f9ae157d2504}\label{class_junia_1_1_vector3_a2a2af602b9509d1eae68f9ae157d2504}} 
+\index{Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}!dot@{dot}}
+\index{dot@{dot}!Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dot()}{dot()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+double \mbox{\hyperlink{class_junia_1_1_vector3}{Junia\+::\+Vector3}}$<$ T $>$\+::dot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+calculate the dot product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the vector to multiply with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the scalar resulting from the calculation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_vector3_aace576e037377fb89e7df52b99635adb}\label{class_junia_1_1_vector3_aace576e037377fb89e7df52b99635adb}} 
+\index{Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{magnitude()}{magnitude()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+double \mbox{\hyperlink{class_junia_1_1_vector3}{Junia\+::\+Vector3}}$<$ T $>$\+::magnitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the magnitude of the vector 
+
+\begin{DoxyReturn}{Returns}
+a double value conatinaing the magnitude of the vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_vector3_ab30f5d66a6bcc66c05601a12a9f0847a}\label{class_junia_1_1_vector3_ab30f5d66a6bcc66c05601a12a9f0847a}} 
+\index{Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator\%()}{operator\%()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$T$>$ \mbox{\hyperlink{class_junia_1_1_vector3}{Junia\+::\+Vector3}}$<$ T $>$\+::operator\% (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+calculate the cross product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the vector to multiply with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the vector resulting from the calculation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_vector3_a2df72b8f120c922b3ea777c071486e5f}\label{class_junia_1_1_vector3_a2df72b8f120c922b3ea777c071486e5f}} 
+\index{Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}!operator\%=@{operator\%=}}
+\index{operator\%=@{operator\%=}!Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator\%=()}{operator\%=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_junia_1_1_vector3}{Junia\+::\+Vector3}}$<$ T $>$\+::operator\%= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set this vector equal to the cross product with another vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the vector to multiply with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_vector3_a6ca966d2979bf8f834bb54a19c02abb1}\label{class_junia_1_1_vector3_a6ca966d2979bf8f834bb54a19c02abb1}} 
+\index{Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+double \mbox{\hyperlink{class_junia_1_1_vector3}{Junia\+::\+Vector3}}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_vector3}{Vector3}}$<$ T $>$ \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+calculate the dot product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the vector to multiply with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the scalar resulting from the calculation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_vector3_a13be5c0fb2ef0548d3cdb905e85dbdfe}\label{class_junia_1_1_vector3_a13be5c0fb2ef0548d3cdb905e85dbdfe}} 
+\index{Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Junia::Vector3$<$ T $>$@{Junia::Vector3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{class_junia_1_1_vector3}{Junia\+::\+Vector3}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get an element of the vector by index 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the value to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value saved at the given index 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maxjh/\+Documents/\+Visual Studio 2019/\+Projects/\+SDLTest\+Proj/\+Junia/\+Math/vectors/Vector3.\+h\end{DoxyCompactItemize}

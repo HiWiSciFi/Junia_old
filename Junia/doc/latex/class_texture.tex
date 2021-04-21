@@ -1,0 +1,106 @@
+\hypertarget{class_texture}{}\doxysection{Texture Class Reference}
+\label{class_texture}\index{Texture@{Texture}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_texture_a6c275e3f186675ff6ed73ccf970e552f}\label{class_texture_a6c275e3f186675ff6ed73ccf970e552f}} 
+\mbox{\hyperlink{class_texture_a6c275e3f186675ff6ed73ccf970e552f}{Texture}} ()
+\begin{DoxyCompactList}\small\item\em the default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture_a7775edff718dcb5e0233734132e56c02}{Texture}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em loads a texture from an image file \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture_a317da274d397c157c8db56e26cb2faca}{Texture}} (const \mbox{\hyperlink{class_texture}{Texture}} \&v)
+\begin{DoxyCompactList}\small\item\em create the texture by copying from another texture \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture}{Texture}} \& \mbox{\hyperlink{class_texture_af2a4dcd56c832534b2fa38659f24defa}{operator=}} (const \mbox{\hyperlink{class_texture}{Texture}} \&v)
+\begin{DoxyCompactList}\small\item\em set the texture equals to another texture \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_acdc84478469101238555a528914da179}{Load\+Texture}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em loads an image from a file and sets it as the source for this texture \end{DoxyCompactList}\item 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{class_texture_ad99f4a35c1c72746ef88fa9a52b1cd73}{get\+Surface}} ()
+\begin{DoxyCompactList}\small\item\em get the SDL API surface representing the texture \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_texture_a7775edff718dcb5e0233734132e56c02}\label{class_texture_a7775edff718dcb5e0233734132e56c02}} 
+\index{Texture@{Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+loads a texture from an image file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the path to the image file to load the texture from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_texture_a317da274d397c157c8db56e26cb2faca}\label{class_texture_a317da274d397c157c8db56e26cb2faca}} 
+\index{Texture@{Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_texture}{Texture}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+create the texture by copying from another texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the \mbox{\hyperlink{class_texture}{Texture}} to copy the attributes from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_texture_ad99f4a35c1c72746ef88fa9a52b1cd73}\label{class_texture_ad99f4a35c1c72746ef88fa9a52b1cd73}} 
+\index{Texture@{Texture}!getSurface@{getSurface}}
+\index{getSurface@{getSurface}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{getSurface()}{getSurface()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ Texture\+::get\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the SDL API surface representing the texture 
+
+\begin{DoxyReturn}{Returns}
+the SDL API surface for the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_texture_acdc84478469101238555a528914da179}\label{class_texture_acdc84478469101238555a528914da179}} 
+\index{Texture@{Texture}!LoadTexture@{LoadTexture}}
+\index{LoadTexture@{LoadTexture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{LoadTexture()}{LoadTexture()}}
+{\footnotesize\ttfamily void Texture\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+loads an image from a file and sets it as the source for this texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the path to the image file to load \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_texture_af2a4dcd56c832534b2fa38659f24defa}\label{class_texture_af2a4dcd56c832534b2fa38659f24defa}} 
+\index{Texture@{Texture}!operator=@{operator=}}
+\index{operator=@{operator=}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture}{Texture}} \& Texture\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_texture}{Texture}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+set the texture equals to another texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the texture to copy the attributes from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the texture the attributes have been copied to 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maxjh/\+Documents/\+Visual Studio 2019/\+Projects/\+SDLTest\+Proj/\+SDLTest/Texture.\+h\item 
+C\+:/\+Users/maxjh/\+Documents/\+Visual Studio 2019/\+Projects/\+SDLTest\+Proj/\+SDLTest/Texture.\+cpp\end{DoxyCompactItemize}

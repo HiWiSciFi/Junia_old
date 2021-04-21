@@ -1,0 +1,106 @@
+\hypertarget{class_junia_1_1_texture}{}\doxysection{Junia\+::Texture Class Reference}
+\label{class_junia_1_1_texture}\index{Junia::Texture@{Junia::Texture}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_junia_1_1_texture_afbcaecea26e9027ecaa4c1a570ef1e62}\label{class_junia_1_1_texture_afbcaecea26e9027ecaa4c1a570ef1e62}} 
+\mbox{\hyperlink{class_junia_1_1_texture_afbcaecea26e9027ecaa4c1a570ef1e62}{Texture}} ()
+\begin{DoxyCompactList}\small\item\em the default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_texture_a5c258c31526bf8409c57321e9c1ee9e8}{Texture}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em loads a texture from an image file \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_texture_a4d47bcf3615c7daca662dc988aafc569}{Texture}} (const \mbox{\hyperlink{class_junia_1_1_texture}{Texture}} \&v)
+\begin{DoxyCompactList}\small\item\em create the texture by copying from another texture \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_texture}{Texture}} \& \mbox{\hyperlink{class_junia_1_1_texture_a7999e4a5a3425022553966476f0dfaf0}{operator=}} (const \mbox{\hyperlink{class_junia_1_1_texture}{Texture}} \&v)
+\begin{DoxyCompactList}\small\item\em set the texture equals to another texture \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_texture_aaf236132847b88b861c8d716dab54ae8}{Load\+Texture}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em loads an image from a file and sets it as the source for this texture \end{DoxyCompactList}\item 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{class_junia_1_1_texture_ad895e798e75f8a65a55a6d20157ff96d}{get\+Surface}} ()
+\begin{DoxyCompactList}\small\item\em get the SDL API surface representing the texture \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_junia_1_1_texture_a5c258c31526bf8409c57321e9c1ee9e8}\label{class_junia_1_1_texture_a5c258c31526bf8409c57321e9c1ee9e8}} 
+\index{Junia::Texture@{Junia::Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Junia::Texture@{Junia::Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Junia\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+loads a texture from an image file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the path to the image file to load the texture from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_texture_a4d47bcf3615c7daca662dc988aafc569}\label{class_junia_1_1_texture_a4d47bcf3615c7daca662dc988aafc569}} 
+\index{Junia::Texture@{Junia::Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Junia::Texture@{Junia::Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Junia\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_texture}{Texture}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+create the texture by copying from another texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the \mbox{\hyperlink{class_junia_1_1_texture}{Texture}} to copy the attributes from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_junia_1_1_texture_ad895e798e75f8a65a55a6d20157ff96d}\label{class_junia_1_1_texture_ad895e798e75f8a65a55a6d20157ff96d}} 
+\index{Junia::Texture@{Junia::Texture}!getSurface@{getSurface}}
+\index{getSurface@{getSurface}!Junia::Texture@{Junia::Texture}}
+\doxysubsubsection{\texorpdfstring{getSurface()}{getSurface()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ Junia\+::\+Texture\+::get\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the SDL API surface representing the texture 
+
+\begin{DoxyReturn}{Returns}
+the SDL API surface for the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_texture_aaf236132847b88b861c8d716dab54ae8}\label{class_junia_1_1_texture_aaf236132847b88b861c8d716dab54ae8}} 
+\index{Junia::Texture@{Junia::Texture}!LoadTexture@{LoadTexture}}
+\index{LoadTexture@{LoadTexture}!Junia::Texture@{Junia::Texture}}
+\doxysubsubsection{\texorpdfstring{LoadTexture()}{LoadTexture()}}
+{\footnotesize\ttfamily void Junia\+::\+Texture\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+loads an image from a file and sets it as the source for this texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the path to the image file to load \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_texture_a7999e4a5a3425022553966476f0dfaf0}\label{class_junia_1_1_texture_a7999e4a5a3425022553966476f0dfaf0}} 
+\index{Junia::Texture@{Junia::Texture}!operator=@{operator=}}
+\index{operator=@{operator=}!Junia::Texture@{Junia::Texture}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_junia_1_1_texture}{Junia\+::\+Texture}} \& Junia\+::\+Texture\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_texture}{Texture}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+set the texture equals to another texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the texture to copy the attributes from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the texture the attributes have been copied to 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maxjh/\+Documents/\+Visual Studio 2019/\+Projects/\+SDLTest\+Proj/\+Junia/Texture.\+h\item 
+C\+:/\+Users/maxjh/\+Documents/\+Visual Studio 2019/\+Projects/\+SDLTest\+Proj/\+Junia/Texture.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,509 @@
+\hypertarget{class_junia_1_1_window}{}\doxysection{Junia\+::Window Class Reference}
+\label{class_junia_1_1_window}\index{Junia::Window@{Junia::Window}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_junia_1_1_window_a57af1db7a93fd709528ebd36077fc4df}\label{class_junia_1_1_window_a57af1db7a93fd709528ebd36077fc4df}} 
+\mbox{\hyperlink{class_junia_1_1_window_a57af1db7a93fd709528ebd36077fc4df}{Window}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_window_a90c0fdd53c51ca74f59118e4ebf1d125}{Window}} (const \mbox{\hyperlink{class_junia_1_1_window}{Window}} \&v)
+\begin{DoxyCompactList}\small\item\em initialize \mbox{\hyperlink{class_junia_1_1_window}{Window}} and copy attributes \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_window}{Window}} \& \mbox{\hyperlink{class_junia_1_1_window_a1919b1dd7032bfefc6462f0bc93fe3ea}{operator=}} (const \mbox{\hyperlink{class_junia_1_1_window}{Window}} \&v)
+\begin{DoxyCompactList}\small\item\em set window equals \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a14755fedcb2854bc47ade8a186de9d64}{create}} (const char $\ast$title, \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ size)
+\begin{DoxyCompactList}\small\item\em create the window and show it \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a1cbbbf29c0ceef00b3f7af2dfda40172}{create}} (const char $\ast$title, \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ position, \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ size)
+\begin{DoxyCompactList}\small\item\em create the window and show it \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_junia_1_1_window_ac8f451480d6906819e0e790fb6e68611}\label{class_junia_1_1_window_ac8f451480d6906819e0e790fb6e68611}} 
+void \mbox{\hyperlink{class_junia_1_1_window_ac8f451480d6906819e0e790fb6e68611}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em destroy the window, delete references and call API cleanup \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_junia_1_1_window_aa4071f9cf7da9d14e0a0db94519249c2}{has\+Border}} () const
+\begin{DoxyCompactList}\small\item\em if the window has a border \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a597d6de5ffe01a419b7d515c62e66759}{get\+Borders\+Size}} (int $\ast$top, int $\ast$left, int $\ast$bottom, int $\ast$right) const
+\begin{DoxyCompactList}\small\item\em get the size of the window border \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_junia_1_1_window_a7a162e7df3ebdaeb4d97123aa00ced46}{get\+Gamma}} () const
+\begin{DoxyCompactList}\small\item\em get the gamma of the window \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_junia_1_1_window_a8898bb122f354e1c7a39699bbfb04bbd}{get\+Display\+Index}} () const
+\begin{DoxyCompactList}\small\item\em get which display the window is being displayed on \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a717af8c9b34a5f551953f1b95e12cfc8}{get\+Gamma\+Ramp}} (Uint16 $\ast$red, Uint16 $\ast$green, Uint16 $\ast$blue) const
+\begin{DoxyCompactList}\small\item\em get the gamma ramp of the window \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_junia_1_1_window_ab50c9601f5874db9d88594d8a82346df}{is\+Input\+Source}} () const
+\begin{DoxyCompactList}\small\item\em if the window is the current source for the input API \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ \mbox{\hyperlink{class_junia_1_1_window_aa6cdfac3d97f6fb0e9ca44e7738ca384}{get\+Max\+Size}} () const
+\begin{DoxyCompactList}\small\item\em get the maximum window size \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ \mbox{\hyperlink{class_junia_1_1_window_ad3dbddcdfe76c9bbe811769e535c029e}{get\+Min\+Size}} () const
+\begin{DoxyCompactList}\small\item\em get the minimum window size \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_junia_1_1_window_a719286fc51d1b9996f0bc2108018a2db}{get\+Opacity}} () const
+\begin{DoxyCompactList}\small\item\em get the opacity of the window \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ \mbox{\hyperlink{class_junia_1_1_window_a9f4110625a55bd80c8974ce83c728bba}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em get the position of the window on the screen \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_junia_1_1_window_af2dec47a014eb5874c70a41b423833da}{is\+Resizable}} () const
+\begin{DoxyCompactList}\small\item\em if the window is resizable \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ \mbox{\hyperlink{class_junia_1_1_window_a59a882ef19a1989cecb971eb18cfe9bc}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em get the size of the window in pixels \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{class_junia_1_1_window_a16c65d07fe400c1855344524e19de43e}{get\+Title}} () const
+\begin{DoxyCompactList}\small\item\em get the title of the window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a4b5148a84b5497521f181151e908d4e8}{set\+Border}} (bool bordered)
+\begin{DoxyCompactList}\small\item\em set the window border \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a3399efffb0dd10bdfbbdbad46d7ac99c}{set\+Gamma}} (float gamma)
+\begin{DoxyCompactList}\small\item\em set the window gamma \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_junia_1_1_window_a2883a1b3525e1df27b646cf77f633532}\label{class_junia_1_1_window_a2883a1b3525e1df27b646cf77f633532}} 
+void \mbox{\hyperlink{class_junia_1_1_window_a2883a1b3525e1df27b646cf77f633532}{set\+True\+Fullscreen}} ()
+\begin{DoxyCompactList}\small\item\em set the window to true fullscreen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_junia_1_1_window_aa764a2e738562a388672bc129faf9c5a}\label{class_junia_1_1_window_aa764a2e738562a388672bc129faf9c5a}} 
+void \mbox{\hyperlink{class_junia_1_1_window_aa764a2e738562a388672bc129faf9c5a}{set\+Fake\+Fullscreen}} ()
+\begin{DoxyCompactList}\small\item\em set the window to screen-\/sized windowed mode \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_junia_1_1_window_a9574ab948146bf36d87a1f41c23e6a59}\label{class_junia_1_1_window_a9574ab948146bf36d87a1f41c23e6a59}} 
+void \mbox{\hyperlink{class_junia_1_1_window_a9574ab948146bf36d87a1f41c23e6a59}{set\+Windowed}} ()
+\begin{DoxyCompactList}\small\item\em set the window windowed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a6334419520a9c9c66630f5c74bcf1826}{set\+Gamma\+Ramp}} (const Uint16 red\mbox{[}256\mbox{]}, const Uint16 green\mbox{[}256\mbox{]}, const Uint16 blue\mbox{[}256\mbox{]})
+\begin{DoxyCompactList}\small\item\em set the window gamma ramp \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_ab70d022ffdc57b0e774c373a1f511753}{set\+As\+Input\+Source}} (const bool use)
+\begin{DoxyCompactList}\small\item\em set if the window shoul be the source for the input API \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a76da9467ce578657544bee64f944ef81}{set\+Max\+Size}} (const \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ size)
+\begin{DoxyCompactList}\small\item\em set the maximum size of the window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a3fa01da03363e5dd596af7f916cd6e9f}{set\+Min\+Size}} (const \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ size)
+\begin{DoxyCompactList}\small\item\em set the minimum size of the window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a1e94254025248b63fa0b568f9faeec12}{set\+Opacity}} (const float opacity)
+\begin{DoxyCompactList}\small\item\em set the opacity of the window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a3b7412595d7292f6d57d12a58fe680d9}{set\+Position}} (const \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ position)
+\begin{DoxyCompactList}\small\item\em set the position of the window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a0dc55029e381b79398404abd6b9960e6}{set\+Resizable}} (const bool resizable)
+\begin{DoxyCompactList}\small\item\em set the window resizability \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_aed369dfe0c29bb3a4125992a20417401}{set\+Size}} (const \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ size)
+\begin{DoxyCompactList}\small\item\em set the size of the window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_junia_1_1_window_a0ab07a149df0a869b49e5ec8b8e7335e}{set\+Title}} (const char $\ast$title)
+\begin{DoxyCompactList}\small\item\em set the title of the window \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_junia_1_1_window_a90c0fdd53c51ca74f59118e4ebf1d125}\label{class_junia_1_1_window_a90c0fdd53c51ca74f59118e4ebf1d125}} 
+\index{Junia::Window@{Junia::Window}!Window@{Window}}
+\index{Window@{Window}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily Junia\+::\+Window\+::\+Window (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_window}{Window}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+initialize \mbox{\hyperlink{class_junia_1_1_window}{Window}} and copy attributes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the window to copy the attributes from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_junia_1_1_window_a1cbbbf29c0ceef00b3f7af2dfda40172}\label{class_junia_1_1_window_a1cbbbf29c0ceef00b3f7af2dfda40172}} 
+\index{Junia::Window@{Junia::Window}!create@{create}}
+\index{create@{create}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::create (\begin{DoxyParamCaption}\item[{const char $\ast$}]{title,  }\item[{\mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$}]{position,  }\item[{\mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$}]{size }\end{DoxyParamCaption})}
+
+
+
+create the window and show it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & the title of the window \\
+\hline
+{\em position} & the position to display the window in \\
+\hline
+{\em size} & the size of the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a14755fedcb2854bc47ade8a186de9d64}\label{class_junia_1_1_window_a14755fedcb2854bc47ade8a186de9d64}} 
+\index{Junia::Window@{Junia::Window}!create@{create}}
+\index{create@{create}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::create (\begin{DoxyParamCaption}\item[{const char $\ast$}]{title,  }\item[{\mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$}]{size }\end{DoxyParamCaption})}
+
+
+
+create the window and show it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & the title of the window \\
+\hline
+{\em size} & the size of the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a597d6de5ffe01a419b7d515c62e66759}\label{class_junia_1_1_window_a597d6de5ffe01a419b7d515c62e66759}} 
+\index{Junia::Window@{Junia::Window}!getBordersSize@{getBordersSize}}
+\index{getBordersSize@{getBordersSize}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{getBordersSize()}{getBordersSize()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::get\+Borders\+Size (\begin{DoxyParamCaption}\item[{int $\ast$}]{top,  }\item[{int $\ast$}]{left,  }\item[{int $\ast$}]{bottom,  }\item[{int $\ast$}]{right }\end{DoxyParamCaption}) const}
+
+
+
+get the size of the window border 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & reference to the variable that will hold the top border size \\
+\hline
+{\em left} & reference to the variable that will hold the left border size \\
+\hline
+{\em bottom} & reference to the variable that will hold the bottom border size \\
+\hline
+{\em right} & reference to the variable that will hold the right border size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a8898bb122f354e1c7a39699bbfb04bbd}\label{class_junia_1_1_window_a8898bb122f354e1c7a39699bbfb04bbd}} 
+\index{Junia::Window@{Junia::Window}!getDisplayIndex@{getDisplayIndex}}
+\index{getDisplayIndex@{getDisplayIndex}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{getDisplayIndex()}{getDisplayIndex()}}
+{\footnotesize\ttfamily int Junia\+::\+Window\+::get\+Display\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get which display the window is being displayed on 
+
+\begin{DoxyReturn}{Returns}
+a int value holding the system index of the display 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_a7a162e7df3ebdaeb4d97123aa00ced46}\label{class_junia_1_1_window_a7a162e7df3ebdaeb4d97123aa00ced46}} 
+\index{Junia::Window@{Junia::Window}!getGamma@{getGamma}}
+\index{getGamma@{getGamma}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{getGamma()}{getGamma()}}
+{\footnotesize\ttfamily float Junia\+::\+Window\+::get\+Gamma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get the gamma of the window 
+
+\begin{DoxyReturn}{Returns}
+a float value holding the gamma of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_a717af8c9b34a5f551953f1b95e12cfc8}\label{class_junia_1_1_window_a717af8c9b34a5f551953f1b95e12cfc8}} 
+\index{Junia::Window@{Junia::Window}!getGammaRamp@{getGammaRamp}}
+\index{getGammaRamp@{getGammaRamp}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{getGammaRamp()}{getGammaRamp()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::get\+Gamma\+Ramp (\begin{DoxyParamCaption}\item[{Uint16 $\ast$}]{red,  }\item[{Uint16 $\ast$}]{green,  }\item[{Uint16 $\ast$}]{blue }\end{DoxyParamCaption}) const}
+
+
+
+get the gamma ramp of the window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em red} & the red curve \\
+\hline
+{\em green} & the green curve \\
+\hline
+{\em blue} & the blue curve \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_aa6cdfac3d97f6fb0e9ca44e7738ca384}\label{class_junia_1_1_window_aa6cdfac3d97f6fb0e9ca44e7738ca384}} 
+\index{Junia::Window@{Junia::Window}!getMaxSize@{getMaxSize}}
+\index{getMaxSize@{getMaxSize}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{getMaxSize()}{getMaxSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ Junia\+::\+Window\+::get\+Max\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get the maximum window size 
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_junia_1_1_vector2}{Vector2}} containing the maximum x and y size of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_ad3dbddcdfe76c9bbe811769e535c029e}\label{class_junia_1_1_window_ad3dbddcdfe76c9bbe811769e535c029e}} 
+\index{Junia::Window@{Junia::Window}!getMinSize@{getMinSize}}
+\index{getMinSize@{getMinSize}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{getMinSize()}{getMinSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ Junia\+::\+Window\+::get\+Min\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get the minimum window size 
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_junia_1_1_vector2}{Vector2}} containing the minimum x and y size of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_a719286fc51d1b9996f0bc2108018a2db}\label{class_junia_1_1_window_a719286fc51d1b9996f0bc2108018a2db}} 
+\index{Junia::Window@{Junia::Window}!getOpacity@{getOpacity}}
+\index{getOpacity@{getOpacity}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{getOpacity()}{getOpacity()}}
+{\footnotesize\ttfamily float Junia\+::\+Window\+::get\+Opacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get the opacity of the window 
+
+\begin{DoxyReturn}{Returns}
+a float holding the windows opacity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_a9f4110625a55bd80c8974ce83c728bba}\label{class_junia_1_1_window_a9f4110625a55bd80c8974ce83c728bba}} 
+\index{Junia::Window@{Junia::Window}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ Junia\+::\+Window\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get the position of the window on the screen 
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_junia_1_1_vector2}{Vector2}} containing the position of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_a59a882ef19a1989cecb971eb18cfe9bc}\label{class_junia_1_1_window_a59a882ef19a1989cecb971eb18cfe9bc}} 
+\index{Junia::Window@{Junia::Window}!getSize@{getSize}}
+\index{getSize@{getSize}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$ Junia\+::\+Window\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get the size of the window in pixels 
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_junia_1_1_vector2}{Vector2}} containing the x and y size of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_a16c65d07fe400c1855344524e19de43e}\label{class_junia_1_1_window_a16c65d07fe400c1855344524e19de43e}} 
+\index{Junia::Window@{Junia::Window}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily const char $\ast$ Junia\+::\+Window\+::get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get the title of the window 
+
+\begin{DoxyReturn}{Returns}
+a c string containing the title of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_aa4071f9cf7da9d14e0a0db94519249c2}\label{class_junia_1_1_window_aa4071f9cf7da9d14e0a0db94519249c2}} 
+\index{Junia::Window@{Junia::Window}!hasBorder@{hasBorder}}
+\index{hasBorder@{hasBorder}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{hasBorder()}{hasBorder()}}
+{\footnotesize\ttfamily bool Junia\+::\+Window\+::has\+Border (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+if the window has a border 
+
+\begin{DoxyReturn}{Returns}
+true, if the window has a border, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_ab50c9601f5874db9d88594d8a82346df}\label{class_junia_1_1_window_ab50c9601f5874db9d88594d8a82346df}} 
+\index{Junia::Window@{Junia::Window}!isInputSource@{isInputSource}}
+\index{isInputSource@{isInputSource}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{isInputSource()}{isInputSource()}}
+{\footnotesize\ttfamily bool Junia\+::\+Window\+::is\+Input\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+if the window is the current source for the input API 
+
+\begin{DoxyReturn}{Returns}
+true, if the window is the source for input events 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_af2dec47a014eb5874c70a41b423833da}\label{class_junia_1_1_window_af2dec47a014eb5874c70a41b423833da}} 
+\index{Junia::Window@{Junia::Window}!isResizable@{isResizable}}
+\index{isResizable@{isResizable}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{isResizable()}{isResizable()}}
+{\footnotesize\ttfamily bool Junia\+::\+Window\+::is\+Resizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+if the window is resizable 
+
+\begin{DoxyReturn}{Returns}
+true, if the window is resizable, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_a1919b1dd7032bfefc6462f0bc93fe3ea}\label{class_junia_1_1_window_a1919b1dd7032bfefc6462f0bc93fe3ea}} 
+\index{Junia::Window@{Junia::Window}!operator=@{operator=}}
+\index{operator=@{operator=}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_junia_1_1_window}{Junia\+::\+Window}} \& Junia\+::\+Window\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_window}{Window}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+set window equals 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the window to take the attributes from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to a new window created by copying 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_junia_1_1_window_ab70d022ffdc57b0e774c373a1f511753}\label{class_junia_1_1_window_ab70d022ffdc57b0e774c373a1f511753}} 
+\index{Junia::Window@{Junia::Window}!setAsInputSource@{setAsInputSource}}
+\index{setAsInputSource@{setAsInputSource}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{setAsInputSource()}{setAsInputSource()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::set\+As\+Input\+Source (\begin{DoxyParamCaption}\item[{const bool}]{use }\end{DoxyParamCaption})}
+
+
+
+set if the window shoul be the source for the input API 
+
+
+\begin{DoxyParams}{Parameters}
+{\em use} & wether or not the window should be used for input \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a4b5148a84b5497521f181151e908d4e8}\label{class_junia_1_1_window_a4b5148a84b5497521f181151e908d4e8}} 
+\index{Junia::Window@{Junia::Window}!setBorder@{setBorder}}
+\index{setBorder@{setBorder}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{setBorder()}{setBorder()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::set\+Border (\begin{DoxyParamCaption}\item[{bool}]{bordered }\end{DoxyParamCaption})}
+
+
+
+set the window border 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bordered} & if the border should be shown or not \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a3399efffb0dd10bdfbbdbad46d7ac99c}\label{class_junia_1_1_window_a3399efffb0dd10bdfbbdbad46d7ac99c}} 
+\index{Junia::Window@{Junia::Window}!setGamma@{setGamma}}
+\index{setGamma@{setGamma}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{setGamma()}{setGamma()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::set\+Gamma (\begin{DoxyParamCaption}\item[{float}]{gamma }\end{DoxyParamCaption})}
+
+
+
+set the window gamma 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamma} & a value between 0.\+0 and 1.\+0 to set the window gamma to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a6334419520a9c9c66630f5c74bcf1826}\label{class_junia_1_1_window_a6334419520a9c9c66630f5c74bcf1826}} 
+\index{Junia::Window@{Junia::Window}!setGammaRamp@{setGammaRamp}}
+\index{setGammaRamp@{setGammaRamp}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{setGammaRamp()}{setGammaRamp()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::set\+Gamma\+Ramp (\begin{DoxyParamCaption}\item[{const Uint16}]{red\mbox{[}256\mbox{]},  }\item[{const Uint16}]{green\mbox{[}256\mbox{]},  }\item[{const Uint16}]{blue\mbox{[}256\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+set the window gamma ramp 
+
+
+\begin{DoxyParams}{Parameters}
+{\em red} & the red curve \\
+\hline
+{\em green} & the green curve \\
+\hline
+{\em blue} & the blue curve \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a76da9467ce578657544bee64f944ef81}\label{class_junia_1_1_window_a76da9467ce578657544bee64f944ef81}} 
+\index{Junia::Window@{Junia::Window}!setMaxSize@{setMaxSize}}
+\index{setMaxSize@{setMaxSize}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{setMaxSize()}{setMaxSize()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::set\+Max\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$}]{size }\end{DoxyParamCaption})}
+
+
+
+set the maximum size of the window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the x and y size to set the window maximum size to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a3fa01da03363e5dd596af7f916cd6e9f}\label{class_junia_1_1_window_a3fa01da03363e5dd596af7f916cd6e9f}} 
+\index{Junia::Window@{Junia::Window}!setMinSize@{setMinSize}}
+\index{setMinSize@{setMinSize}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{setMinSize()}{setMinSize()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::set\+Min\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$}]{size }\end{DoxyParamCaption})}
+
+
+
+set the minimum size of the window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the x and y size to set the window minimum size to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a1e94254025248b63fa0b568f9faeec12}\label{class_junia_1_1_window_a1e94254025248b63fa0b568f9faeec12}} 
+\index{Junia::Window@{Junia::Window}!setOpacity@{setOpacity}}
+\index{setOpacity@{setOpacity}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{setOpacity()}{setOpacity()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::set\+Opacity (\begin{DoxyParamCaption}\item[{const float}]{opacity }\end{DoxyParamCaption})}
+
+
+
+set the opacity of the window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opacity} & the opycity between 0.\+0 and 1.\+0 to set the window opacity to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a3b7412595d7292f6d57d12a58fe680d9}\label{class_junia_1_1_window_a3b7412595d7292f6d57d12a58fe680d9}} 
+\index{Junia::Window@{Junia::Window}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$}]{position }\end{DoxyParamCaption})}
+
+
+
+set the position of the window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the position to move the window to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a0dc55029e381b79398404abd6b9960e6}\label{class_junia_1_1_window_a0dc55029e381b79398404abd6b9960e6}} 
+\index{Junia::Window@{Junia::Window}!setResizable@{setResizable}}
+\index{setResizable@{setResizable}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{setResizable()}{setResizable()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::set\+Resizable (\begin{DoxyParamCaption}\item[{const bool}]{resizable }\end{DoxyParamCaption})}
+
+
+
+set the window resizability 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resizable} & if the window is resizable or not \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_aed369dfe0c29bb3a4125992a20417401}\label{class_junia_1_1_window_aed369dfe0c29bb3a4125992a20417401}} 
+\index{Junia::Window@{Junia::Window}!setSize@{setSize}}
+\index{setSize@{setSize}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::set\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_junia_1_1_vector2}{Junia\+::\+Vector2}}$<$ int $>$}]{size }\end{DoxyParamCaption})}
+
+
+
+set the size of the window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the size in x and y direction the window should be set to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_junia_1_1_window_a0ab07a149df0a869b49e5ec8b8e7335e}\label{class_junia_1_1_window_a0ab07a149df0a869b49e5ec8b8e7335e}} 
+\index{Junia::Window@{Junia::Window}!setTitle@{setTitle}}
+\index{setTitle@{setTitle}!Junia::Window@{Junia::Window}}
+\doxysubsubsection{\texorpdfstring{setTitle()}{setTitle()}}
+{\footnotesize\ttfamily void Junia\+::\+Window\+::set\+Title (\begin{DoxyParamCaption}\item[{const char $\ast$}]{title }\end{DoxyParamCaption})}
+
+
+
+set the title of the window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & the c string to set the window title to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/maxjh/\+Documents/\+Visual Studio 2019/\+Projects/\+SDLTest\+Proj/\+Junia/Window.\+h\item 
+C\+:/\+Users/maxjh/\+Documents/\+Visual Studio 2019/\+Projects/\+SDLTest\+Proj/\+Junia/Window.\+cpp\end{DoxyCompactItemize}
