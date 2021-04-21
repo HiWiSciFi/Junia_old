@@ -163,6 +163,7 @@
     <ClInclude Include="Math\math.h" />
     <ClInclude Include="Math\matrices\iMatrix.h" />
     <ClInclude Include="Math\matrices\matrices.h" />
+    <ClInclude Include="Math\matrices\Matrix.h" />
     <ClInclude Include="Math\vectors\Vector2.h" />
     <ClInclude Include="Math\vectors\Vector3.h" />
     <ClInclude Include="Math\vectors\vectors.h" />
