@@ -1,14 +1,14 @@
 #include "SDL.h"
-#include "engine.h"
+#include "junia\engine.h"
 #include <exception>
 #include <stdio.h>
 
 #include <iostream>
-#include "math\math.h"
+#include "junia\math\math.h"
 
 int main(int argc, char* argv[])
 {
-	Junia::iMatrix m1 = Junia::iMatrix(3, 3);
+	Junia::Matrix<int> m1 = Junia::Matrix<int>(3, 3);
 	m1(0, 0) = 2;
 	m1(0, 1) = 3;
 	m1(0, 2) = 5;
@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
 	m1(2, 1) = 3;
 	m1(2, 2) = 7;
 
-	Junia::iMatrix m2 = Junia::iMatrix(m1);
+	Junia::Matrix<int> m2 = m1;
 
 	std::cout <<
 		"[" << m2(0, 0) << "," << m2(0, 1) << "," << m2(0, 2) << "," << std::endl <<

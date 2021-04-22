@@ -15,51 +15,45 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="engine.cpp">
+    <ClCompile Include="Junia\engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
+    <ClCompile Include="Junia\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Math\matrices\iMatrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Texture.cpp">
+    <ClCompile Include="Junia\Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="engine.h">
+    <ClInclude Include="Junia\engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Window.h">
+    <ClInclude Include="Junia\Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\math.h">
+    <ClInclude Include="Junia\Math\math.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\vectors\vectors.h">
+    <ClInclude Include="Junia\Math\vectors\vectors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\matrices\iMatrix.h">
+    <ClInclude Include="Junia\Math\matrices\matrices.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\matrices\matrices.h">
+    <ClInclude Include="Junia\Math\vectors\Vector2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\vectors\Vector2.h">
+    <ClInclude Include="Junia\Math\vectors\Vector3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math\vectors\Vector3.h">
+    <ClInclude Include="Junia\Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Math\matrices\Matrix.h">
+    <ClInclude Include="Junia\Math\matrices\Matrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

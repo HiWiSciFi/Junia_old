@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['loadtexture_71',['LoadTexture',['../class_junia_1_1_texture.html#aaf236132847b88b861c8d716dab54ae8',1,'Junia::Texture']]]
+  ['isinputsource_73',['isInputSource',['../class_junia_1_1_window.html#ab50c9601f5874db9d88594d8a82346df',1,'Junia::Window']]],
+  ['isresizable_74',['isResizable',['../class_junia_1_1_window.html#af2dec47a014eb5874c70a41b423833da',1,'Junia::Window']]]
 ];

@@ -104,7 +104,9 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /s /y $(SolutionDir)\RuntimeLibsExtracted $(TargetDir)</Command>
+      <Command>xcopy /s /y "$(SolutionDir)\RuntimeLibsExtracted" "$(TargetDir)"
+mkdir "$(TargetDir)\Assets"
+xcopy /s /y "$(ProjectDir)\Assets" "$(TargetDir)\Assets"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -124,7 +126,9 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /s /y $(SolutionDir)\RuntimeLibsExtracted $(TargetDir)</Command>
+      <Command>xcopy /s /y "$(SolutionDir)\RuntimeLibsExtracted" "$(TargetDir)"
+mkdir "$(TargetDir)\Assets"
+xcopy /s /y "$(ProjectDir)\Assets" "$(TargetDir)\Assets"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -140,7 +144,9 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /s /y $(SolutionDir)\RuntimeLibsExtracted $(TargetDir)</Command>
+      <Command>xcopy /s /y "$(SolutionDir)\RuntimeLibsExtracted" "$(TargetDir)"
+mkdir "$(TargetDir)\Assets"
+xcopy /s /y "$(ProjectDir)\Assets" "$(TargetDir)\Assets"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -160,27 +166,27 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /s /y $(SolutionDir)\RuntimeLibsExtracted $(TargetDir)</Command>
+      <Command>xcopy /s /y "$(SolutionDir)\RuntimeLibsExtracted" "$(TargetDir)"
+mkdir "$(TargetDir)\Assets"
+xcopy /s /y "$(ProjectDir)\Assets" "$(TargetDir)\Assets"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="engine.cpp" />
+    <ClCompile Include="Junia\engine.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Math\matrices\iMatrix.cpp" />
-    <ClCompile Include="Texture.cpp" />
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="Junia\Texture.cpp" />
+    <ClCompile Include="Junia\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="engine.h" />
-    <ClInclude Include="Math\math.h" />
-    <ClInclude Include="Math\matrices\iMatrix.h" />
-    <ClInclude Include="Math\matrices\matrices.h" />
-    <ClInclude Include="Math\matrices\Matrix.h" />
-    <ClInclude Include="Math\vectors\Vector2.h" />
-    <ClInclude Include="Math\vectors\Vector3.h" />
-    <ClInclude Include="Math\vectors\vectors.h" />
-    <ClInclude Include="Texture.h" />
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="Junia\engine.h" />
+    <ClInclude Include="Junia\Math\math.h" />
+    <ClInclude Include="Junia\Math\matrices\matrices.h" />
+    <ClInclude Include="Junia\Math\matrices\Matrix.h" />
+    <ClInclude Include="Junia\Math\vectors\Vector2.h" />
+    <ClInclude Include="Junia\Math\vectors\Vector3.h" />
+    <ClInclude Include="Junia\Math\vectors\vectors.h" />
+    <ClInclude Include="Junia\Texture.h" />
+    <ClInclude Include="Junia\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

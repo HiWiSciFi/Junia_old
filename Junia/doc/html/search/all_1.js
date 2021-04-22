@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['destroy_2',['destroy',['../class_junia_1_1_window.html#ac8f451480d6906819e0e790fb6e68611',1,'Junia::Window']]],
-  ['dot_3',['dot',['../class_junia_1_1_vector2.html#a01b2df08d43490fa0095114800302632',1,'Junia::Vector2::dot()'],['../class_junia_1_1_vector3.html#a2a2af602b9509d1eae68f9ae157d2504',1,'Junia::Vector3::dot()']]]
+  ['create_1',['create',['../class_junia_1_1_window.html#a14755fedcb2854bc47ade8a186de9d64',1,'Junia::Window::create(const char *title, Junia::Vector2&lt; int &gt; size)'],['../class_junia_1_1_window.html#a1cbbbf29c0ceef00b3f7af2dfda40172',1,'Junia::Window::create(const char *title, Junia::Vector2&lt; int &gt; position, Junia::Vector2&lt; int &gt; size)']]],
+  ['cross_2',['cross',['../class_junia_1_1_vector3.html#acaf01681d307d6a2c6b0896f2a504a09',1,'Junia::Vector3']]]
 ];

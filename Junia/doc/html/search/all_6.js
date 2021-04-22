@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['magnitude_20',['magnitude',['../class_junia_1_1_vector2.html#ad0e7bb69b8972ab11493c2effc901a93',1,'Junia::Vector2::magnitude()'],['../class_junia_1_1_vector3.html#aace576e037377fb89e7df52b99635adb',1,'Junia::Vector3::magnitude()']]]
+  ['loadtexture_19',['LoadTexture',['../class_junia_1_1_texture.html#aaf236132847b88b861c8d716dab54ae8',1,'Junia::Texture']]]
 ];

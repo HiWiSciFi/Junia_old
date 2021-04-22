@@ -91,7 +91,7 @@ void Junia::Window::create(const char* title, Junia::Vector2<int> position, Juni
 	SDL_UpdateWindowSurface(this->window);
 
 	//temp
-	helloWorldTex.LoadTexture("HelloWorld.png");
+	helloWorldTex.LoadTexture("Assets/HelloWorld.png");
 	SDL_BlitSurface(helloWorldTex.getSurface(), NULL, this->surface, NULL);
 	SDL_UpdateWindowSurface(this->window);
 }
