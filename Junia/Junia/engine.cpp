@@ -2,13 +2,16 @@
 #include <SDL.h>
 #include <SDL_image.h>
 #include <iostream>
+#include <string>
 
-int Junia::Engine::GameLoop()
+int Junia::Engine::GameLoop(std::function<int()> initFunc, std::function<int()> loopFunc)
 {
 	this->running = true;
+	if (int error = initFunc() != 0) throw ("user-defined initialization function returned error code " + std::to_string(error));
 	SDL_Event sdlEvent;
 	while (this->running) {
 		try {
+			if (int error = loopFunc() != 0) throw ("user-defined loop function returned error code " + std::to_string(error));
 			while (SDL_PollEvent(&sdlEvent) != 0) {
 				if (sdlEvent.type == SDL_QUIT) {
 					this->running = false;
@@ -17,8 +20,10 @@ int Junia::Engine::GameLoop()
 		}
 		catch (const char* e) {
 			printf("There has been a fatal error during the execution of the Junia game loop:\n%s\n", e);
+			return -1;
 		}
 	}
+	return 0;
 }
 
 Junia::Engine::Engine()
@@ -55,8 +60,8 @@ Junia::Engine::~Engine()
 	SDL_Quit();
 }
 
-int Junia::Engine::RunGameLoop()
+int Junia::Engine::RunGameLoop(std::function<int()> initFunc, std::function<int()> loopFunc)
 {
 	if (this->running) throw "Game Loop already running!";
-	return this->GameLoop();
+	return this->GameLoop(initFunc, loopFunc);
 }
