@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Junia\engine.cpp">
+    <ClCompile Include="Junia\Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="junia.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Junia\Window.cpp">
@@ -27,33 +27,39 @@
     <ClCompile Include="Junia\Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Junia\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Junia\engine.h">
+    <ClInclude Include="Junia\Engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Junia\Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Junia\Math\math.h">
+    <ClInclude Include="JM\math.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Junia\Math\vectors\vectors.h">
+    <ClInclude Include="JM\vectors\vectors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Junia\Math\matrices\matrices.h">
+    <ClInclude Include="JM\matrices\matrices.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Junia\Math\vectors\Vector2.h">
+    <ClInclude Include="JM\vectors\Vector2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Junia\Math\vectors\Vector3.h">
+    <ClInclude Include="JM\vectors\Vector3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Junia\Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Junia\Math\matrices\Matrix.h">
+    <ClInclude Include="JM\matrices\Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Junia\Input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

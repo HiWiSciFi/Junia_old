@@ -1,7 +1,7 @@
 #ifndef JUNIA_MATRIX_H_
 #define JUNIA_MATRIX_H_
 
-namespace Junia {
+namespace JM {
 	template<class T> class Matrix {
 	private:
 		/// @brief the array holding the matrix content

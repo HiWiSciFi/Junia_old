@@ -1,12 +1,27 @@
 #ifndef JUNIA_ENGINE_H_
 #define JUNIA_ENGINE_H_
 
+#include "Window.h"
+
 namespace Junia {
-	namespace engine
+	class Engine
 	{
-		void init();
-		void quit();
-	}
+	private:
+		/// @brief the standard window for general purpose rendering
+		Window window;
+		/// @brief if the game loop is running
+		bool running = false;
+		/// @brief the function containing the game loop
+		void GameLoop();
+
+	public:
+		/// @brief initialize the engine and libraries
+		Engine();
+		~Engine();
+
+		/// @brief calls initialization function and loops over the game loop
+		void RunGameLoop();
+	};
 }
 
 #endif

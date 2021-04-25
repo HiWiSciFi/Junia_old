@@ -46,9 +46,9 @@ Junia::Window& Junia::Window::operator=(const Window& w)
 	return *this;
 }
 
-void Junia::Window::create(const char* title, Junia::Vector2<int> size)
+void Junia::Window::create(const char* title, JM::Vector2<int> size)
 {
-	this->create(title, Junia::Vector2<int>(SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED), size);
+	this->create(title, JM::Vector2<int>(SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED), size);
 }
 
 void Junia::Window::checkCreated() const
@@ -58,13 +58,13 @@ void Junia::Window::checkCreated() const
 	}
 }
 
-void Junia::Window::create(const char* title, Junia::Vector2<int> position, Junia::Vector2<int> size)
+void Junia::Window::create(const char* title, JM::Vector2<int> position, JM::Vector2<int> size)
 {
 	if (window != NULL) throw "Window has already been created!";
 
 	// create window
 	window = SDL_CreateWindow("GBE Window", position.x, position.y, 100, 100, SDL_WINDOW_SHOWN);
-	this->setAsInputSource(true);
+	this->setGrabbed(false);
 	this->setBorder(true);
 	this->setGamma(1.0f);
 	this->setOpacity(1.0f);
@@ -133,24 +133,24 @@ void Junia::Window::getGammaRamp(Uint16* red, Uint16* green, Uint16* blue) const
 	SDL_GetWindowGammaRamp(this->window, red, green, blue);
 }
 
-bool Junia::Window::isInputSource() const
+bool Junia::Window::isGrabbed() const
 {
 	this->checkCreated();
 	return SDL_GetWindowGrab(this->window);
 }
 
-Junia::Vector2<int> Junia::Window::getMaxSize() const
+JM::Vector2<int> Junia::Window::getMaxSize() const
 {
 	this->checkCreated();
-	Junia::Vector2<int> retv;
+	JM::Vector2<int> retv;
 	SDL_GetWindowMaximumSize(this->window, &retv.x, &retv.y);
 	return retv;
 }
 
-Junia::Vector2<int> Junia::Window::getMinSize() const
+JM::Vector2<int> Junia::Window::getMinSize() const
 {
 	this->checkCreated();
-	Junia::Vector2<int> retv;
+	JM::Vector2<int> retv;
 	SDL_GetWindowMinimumSize(this->window, &retv.x, &retv.y);
 	return retv;
 }
@@ -165,10 +165,10 @@ float Junia::Window::getOpacity() const
 	return o;
 }
 
-Junia::Vector2<int> Junia::Window::getPosition() const
+JM::Vector2<int> Junia::Window::getPosition() const
 {
 	this->checkCreated();
-	Junia::Vector2<int> retv;
+	JM::Vector2<int> retv;
 	SDL_GetWindowPosition(this->window, &retv.x, &retv.y);
 	return retv;
 }
@@ -179,10 +179,10 @@ bool Junia::Window::isResizable() const
 	return this->resizable;
 }
 
-Junia::Vector2<int> Junia::Window::getSize() const
+JM::Vector2<int> Junia::Window::getSize() const
 {
 	this->checkCreated();
-	Junia::Vector2<int> retv;
+	JM::Vector2<int> retv;
 	SDL_GetWindowSize(this->window, &retv.x, &retv.y);
 	return retv;
 }
@@ -230,21 +230,21 @@ void Junia::Window::setGammaRamp(const Uint16 red[256], const Uint16 green[256],
 	SDL_SetWindowGammaRamp(this->window, red, blue, green);
 }
 
-void Junia::Window::setAsInputSource(const bool use)
+void Junia::Window::setGrabbed(const bool grab)
 {
 	this->checkCreated();
-	SDL_SetWindowGrab(this->window, SDL_bool(use));
+	SDL_SetWindowGrab(this->window, SDL_bool(grab));
 }
 
 //TODO: SDL_SetWindowIcon
 
-void Junia::Window::setMaxSize(const Junia::Vector2<int> size)
+void Junia::Window::setMaxSize(const JM::Vector2<int> size)
 {
 	this->checkCreated();
 	SDL_SetWindowMaximumSize(this->window, size.x, size.y);
 }
 
-void Junia::Window::setMinSize(const Junia::Vector2<int> size)
+void Junia::Window::setMinSize(const JM::Vector2<int> size)
 {
 	this->checkCreated();
 	SDL_SetWindowMinimumSize(this->window, size.x, size.y);
@@ -259,7 +259,7 @@ void Junia::Window::setOpacity(const float opacity)
 	SDL_SetWindowOpacity(this->window, opacity);
 }
 
-void Junia::Window::setPosition(const Junia::Vector2<int> position)
+void Junia::Window::setPosition(const JM::Vector2<int> position)
 {
 	this->checkCreated();
 	SDL_SetWindowPosition(this->window, position.x, position.y);
@@ -272,7 +272,7 @@ void Junia::Window::setResizable(const bool resizable)
 	this->resizable = resizable;
 }
 
-void Junia::Window::setSize(const Junia::Vector2<int> size)
+void Junia::Window::setSize(const JM::Vector2<int> size)
 {
 	this->checkCreated();
 	if (size.x <= 0 || size.y <= 0) {

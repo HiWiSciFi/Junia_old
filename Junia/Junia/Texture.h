@@ -3,7 +3,6 @@
 
 #include "SDL.h"
 #include "SDL_image.h"
-#include "Math\Vectors\Vector2.h"
 #include <string>
 
 namespace Junia {

@@ -3,7 +3,7 @@
 
 #include <cmath>
 
-namespace Junia {
+namespace JM {
 	template<class T> class Vector3 {
 	private:
 

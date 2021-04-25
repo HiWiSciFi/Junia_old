@@ -2,7 +2,7 @@
 #define JUNIA_WINDOW_H_
 
 #include "SDL.h"
-#include "math\vectors\Vector2.h"
+#include "../JM/vectors/Vector2.h"
 #include "Texture.h"
 
 namespace Junia {
@@ -40,12 +40,12 @@ namespace Junia {
 		/// @brief create the window and show it
 		/// @param title the title of the window
 		/// @param size the size of the window
-		void create(const char* title, Junia::Vector2<int> size);
+		void create(const char* title, JM::Vector2<int> size);
 		/// @brief create the window and show it
 		/// @param title the title of the window
 		/// @param position the position to display the window in
 		/// @param size the size of the window
-		void create(const char* title, Junia::Vector2<int> position, Junia::Vector2<int> size);
+		void create(const char* title, JM::Vector2<int> position, JM::Vector2<int> size);
 
 		/// @brief destroy the window, delete references and call API cleanup
 		void destroy();
@@ -70,27 +70,27 @@ namespace Junia {
 		/// @param green the green curve
 		/// @param blue the blue curve
 		void getGammaRamp(Uint16* red, Uint16* green, Uint16* blue) const;
-		/// @brief if the window is the current source for the input API
-		/// @return true, if the window is the source for input events
-		bool isInputSource() const;
+		/// @brief if the user interaction is restricted to this window
+		/// @return true, if the user input is restricted to this window
+		bool isGrabbed() const;
 		/// @brief get the maximum window size
 		/// @return a Vector2 containing the maximum x and y size of the window
-		Junia::Vector2<int> getMaxSize() const;
+		JM::Vector2<int> getMaxSize() const;
 		/// @brief get the minimum window size
 		/// @return a Vector2 containing the minimum x and y size of the window
-		Junia::Vector2<int> getMinSize() const;
+		JM::Vector2<int> getMinSize() const;
 		/// @brief get the opacity of the window
 		/// @return a float holding the windows opacity
 		float getOpacity() const;
 		/// @brief get the position of the window on the screen
 		/// @return a Vector2 containing the position of the window
-		Junia::Vector2<int> getPosition() const;
+		JM::Vector2<int> getPosition() const;
 		/// @brief if the window is resizable
 		/// @return true, if the window is resizable, false otherwise
 		bool isResizable() const;
 		/// @brief get the size of the window in pixels
 		/// @return a Vector2 containing the x and y size of the window
-		Junia::Vector2<int> getSize() const;
+		JM::Vector2<int> getSize() const;
 		/// @brief get the title of the window
 		/// @return a c string containing the title of the window
 		const char* getTitle() const;
@@ -112,28 +112,28 @@ namespace Junia {
 		/// @param green the green curve
 		/// @param blue the blue curve
 		void setGammaRamp(const Uint16 red[256], const Uint16 green[256], const Uint16 blue[256]);
-		/// @brief set if the window shoul be the source for the input API
-		/// @param use wether or not the window should be used for input
-		void setAsInputSource(const bool use);
+		/// @brief restrict user interaction to this window
+		/// @param grab if the user input should be restricted to this window
+		void setGrabbed(const bool grab);
 		//TODO: SDL_SetWindowIcon
 		/// @brief set the maximum size of the window
 		/// @param size the x and y size to set the window maximum size to
-		void setMaxSize(const Junia::Vector2<int> size);
+		void setMaxSize(const JM::Vector2<int> size);
 		/// @brief set the minimum size of the window
 		/// @param size the x and y size to set the window minimum size to
-		void setMinSize(const Junia::Vector2<int> size);
+		void setMinSize(const JM::Vector2<int> size);
 		/// @brief set the opacity of the window
 		/// @param opacity the opycity between 0.0 and 1.0 to set the window opacity to
 		void setOpacity(const float opacity);
 		/// @brief set the position of the window
 		/// @param position the position to move the window to
-		void setPosition(const Junia::Vector2<int> position);
+		void setPosition(const JM::Vector2<int> position);
 		/// @brief set the window resizability
 		/// @param resizable if the window is resizable or not
 		void setResizable(const bool resizable);
 		/// @brief set the size of the window
 		/// @param size the size in x and y direction the window should be set to
-		void setSize(const Junia::Vector2<int> size);
+		void setSize(const JM::Vector2<int> size);
 		/// @brief set the title of the window
 		/// @param title the c string to set the window title to
 		void setTitle(const char* title);
