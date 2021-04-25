@@ -2,7 +2,7 @@
 #define JUNIA_WINDOW_H_
 
 #include "SDL.h"
-#include "../JM/vectors/Vector2.h"
+#include <JM/vectors/Vector2.h>
 #include "Texture.h"
 
 namespace Junia {

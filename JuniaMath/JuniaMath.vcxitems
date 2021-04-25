@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{160a8817-8a1f-45d3-81df-a6d31993fbaa}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)JM\math.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JM\matrices\matrices.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JM\matrices\Matrix.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JM\vectors\Vector2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JM\vectors\Vector3.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JM\vectors\vectors.h" />
+  </ItemGroup>
+</Project>

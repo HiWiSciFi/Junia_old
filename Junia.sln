@@ -3,9 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Junia", "Junia\Junia.vcxproj", "{A6265FE8-E181-47C4-9DBB-8BDD040E9645}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Junia_Test", "Junia_Test\Junia_Test.vcxproj", "{A6265FE8-E181-47C4-9DBB-8BDD040E9645}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JuniaMath", "JuniaMath\JuniaMath.vcxitems", "{160A8817-8A1F-45D3-81DF-A6D31993FBAA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Junia", "Junia\Junia.vcxitems", "{81083A67-7233-478F-BB07-51B076C5E74D}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		JuniaMath\JuniaMath.vcxitems*{160a8817-8a1f-45d3-81df-a6d31993fbaa}*SharedItemsImports = 9
+		Junia\Junia.vcxitems*{81083a67-7233-478f-bb07-51b076c5e74d}*SharedItemsImports = 9
+		JuniaMath\JuniaMath.vcxitems*{a6265fe8-e181-47c4-9dbb-8bdd040e9645}*SharedItemsImports = 4
+		Junia\Junia.vcxitems*{a6265fe8-e181-47c4-9dbb-8bdd040e9645}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
