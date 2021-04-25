@@ -12,7 +12,8 @@ namespace Junia {
 		/// @brief if the game loop is running
 		bool running = false;
 		/// @brief the function containing the game loop
-		void GameLoop();
+		/// @return the exit code of the application
+		int GameLoop();
 
 	public:
 		/// @brief initialize the engine and libraries
@@ -20,7 +21,8 @@ namespace Junia {
 		~Engine();
 
 		/// @brief calls initialization function and loops over the game loop
-		void RunGameLoop();
+		/// @return the exit code of the application
+		int RunGameLoop();
 	};
 }
 

@@ -3,7 +3,7 @@
 #include <SDL_image.h>
 #include <iostream>
 
-void Junia::Engine::GameLoop()
+int Junia::Engine::GameLoop()
 {
 	this->running = true;
 	SDL_Event sdlEvent;
@@ -55,8 +55,8 @@ Junia::Engine::~Engine()
 	SDL_Quit();
 }
 
-void Junia::Engine::RunGameLoop()
+int Junia::Engine::RunGameLoop()
 {
 	if (this->running) throw "Game Loop already running!";
-	this->GameLoop();
+	return this->GameLoop();
 }
