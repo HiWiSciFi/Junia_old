@@ -9,8 +9,8 @@ In case you want to change a few things about how the engine works or fix bugs y
 1. Install Visual Studio 2019 or newer (VS Comunity is free) from https://visualstudio.microsoft.com/de/downloads/
 2. When installing select at least the C++ Desktop development package
 3. Install git precompiled binaries for windows from: https://git-scm.com/downloads
-4. Run the git bash and use cd path to navigate to a folder of your choosing
-5. Clone the repository using git clone https://github.com/hiwiscifi/junia
+4. Run the git bash and use `cd path` to navigate to a folder of your choosing
+5. Clone the repository using `git cline https://github.com/hiwiscifi/junia`
 6. Open the Junia.sln file using Visual Studio
 7. Build & Run the Junia_Test Project to check if everything has been installed correctly
 8. You're ready to go!
