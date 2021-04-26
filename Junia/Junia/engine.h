@@ -8,8 +8,6 @@ namespace Junia {
 	class Engine
 	{
 	private:
-		/// @brief the standard window for general purpose rendering
-		Window window;
 		/// @brief if the game loop is running
 		bool running = false;
 		/// @brief the function containing the game loop

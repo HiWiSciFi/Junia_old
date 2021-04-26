@@ -35,24 +35,16 @@ Junia::Engine::Engine()
 		return;
 	}
 
-	this->window = Window();
-
 	// init SDL_image
 	int imgFlags = IMG_INIT_JPG | IMG_INIT_PNG | IMG_INIT_TIF | IMG_INIT_WEBP;
 	if (!(IMG_Init(imgFlags) & imgFlags))
 	{
 		throw "SDL_image could not initialize! SDL_image Error: %s\n", IMG_GetError();
 	}
-
-	// temp code
-	this->window.create("Junia Window", JM::Vector2<int>(640, 480));
 }
 
 Junia::Engine::~Engine()
 {
-	// destroy window
-	this->window.destroy();
-
 	// quit SDL_image
 	IMG_Quit();
 

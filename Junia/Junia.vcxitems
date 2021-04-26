@@ -22,6 +22,7 @@
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Engine.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Input.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Junia.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Texture.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Window.h" />
   </ItemGroup>

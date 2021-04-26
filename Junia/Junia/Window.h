@@ -21,6 +21,9 @@ namespace Junia {
 		/// @brief if the window is resizable
 		bool resizable;
 
+		/// @brief destroy the window, delete references and call API cleanup
+		void destroy();
+
 		/// @brief check if th window has been created
 		void checkCreated() const;
 	public:
@@ -46,9 +49,6 @@ namespace Junia {
 		/// @param position the position to display the window in
 		/// @param size the size of the window
 		void create(const char* title, JM::Vector2<int> position, JM::Vector2<int> size);
-
-		/// @brief destroy the window, delete references and call API cleanup
-		void destroy();
 
 		/// @brief if the window has a border
 		/// @return true, if the window has a border, false otherwise
