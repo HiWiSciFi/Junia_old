@@ -1,4 +1,5 @@
 #include <Junia/Junia.h>
+#include <iostream>
 
 int initialize() {
 	return 0;
