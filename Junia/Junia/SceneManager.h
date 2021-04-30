@@ -1,0 +1,6 @@
+#ifndef JUNIA_SCENEMANAGER_H_
+#define JUNIA_SCENEMANAGER_H_
+
+
+
+#endif

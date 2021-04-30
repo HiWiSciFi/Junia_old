@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
     Junia::Engine engine;
     Junia::Window window;
     window.create("Junia Window", JM::Vector2<int>(640, 480));
-    
+
     // run game
     int exitCode = engine.RunGameLoop(&initialize, &loop);
 

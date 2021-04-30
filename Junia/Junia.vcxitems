@@ -15,8 +15,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Junia\Engine.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)Junia\Input.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)Junia\Input\Input.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Junia\Texture.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Junia\Window.cpp" />
   </ItemGroup>
@@ -24,9 +22,10 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Audio\AudioListener.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Audio\AudioSource.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Engine.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Input.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Input\Input.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Junia.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Scene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Junia\SceneManager.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Texture.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Junia\Window.h" />
   </ItemGroup>

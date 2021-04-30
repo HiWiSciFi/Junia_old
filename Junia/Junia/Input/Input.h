@@ -4,13 +4,7 @@
 #include "SDL.h"
 
 namespace Junia {
-	class Input
-	{
-	private:
-		
-	public:
-
-	};
+	
 }
 
 #endif
